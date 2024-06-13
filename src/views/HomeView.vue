@@ -44,39 +44,15 @@ export default {
       <div class=" ">
         <div class="lg:max-w-xl lg:pr-5">
           <p class="flex text-sm uppercase text-rose-700 items-center">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="mr-1 inline h-10 w-10"
-              viewBox="0 0 300 300"
-            >
-              <circle
-                cx="159.09"
-                cy="160.12"
-                r="119.42"
-                style="fill: rgb(190, 18, 60)"
-              ></circle>
-              <circle
-                cx="140.91"
-                cy="139.88"
-                r="119.42"
-                style="
-                  fill: none;
-                  stroke: rgb(37, 38, 52);
-                  stroke-miterlimit: 10;
-                  stroke-width: 3px;
-                "
-              ></circle>
+            <svg xmlns="http://www.w3.org/2000/svg" class="mr-1 inline h-10 w-10" viewBox="0 0 300 300">
+              <circle cx="159.09" cy="160.12" r="119.42" style="fill: rgb(190, 18, 60)"></circle>
+              <circle cx="140.91" cy="139.88" r="119.42" style="fill: none;stroke: rgb(37, 38, 52);stroke-miterlimit: 10;stroke-width: 3px;"></circle>
             </svg>
             Usamos la tecnología a su favor
           </p>
-          <h2
-            class="mb-6 max-w-lg text-5xl font-medium leading-snug tracking-tight text-gray-700 sm:text-7xl sm:leading-snug"
-          >
+          <h2 class="mb-6 max-w-lg text-5xl font-medium leading-snug tracking-tight text-gray-700 sm:text-7xl sm:leading-snug">
             Juntos Brindamos
-            <span
-              class="my-1 inline-block border-b-8 border-gray-900 bg-rose-700 px-4 font-extrabold text-white"
-              >Soluciones</span
-            >
+            <span class="my-1 inline-block border-b-8 border-gray-900 bg-rose-700 px-4 font-extrabold text-white" >Soluciones</span>
           </h2>
           <p class="text-base text-gray-700">
             Somos el puente entre la tecnología y los negocios
@@ -104,41 +80,32 @@ export default {
     </div>
   </div>
 
-  <div
-    class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0 -top-5"
-    id="services"
-  >
-    <h2
-      class="mb-1 text-5xl font-extrabold leading-tight text-rose-700 text-center"
-    >
-      Servicios
-    </h2>
-    <p class="mb-12 text-xl text-gray-700 text-center">
-      Gracias a la iniciativa, confianza y profesionalismo de cada uno de los
-      miembros, es que
-      <span class="text-rose-700 font-bold"> JBS Go</span> puede ofrecer
-      múltiples soluciones en diversos sectores del mercado:
-    </p>
+  <div class=" relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0 -top-5" id="services">
+  
+      <h2 class="mb-10 m text-5xl font-extrabold leading-tight text-rose-700 text-center">Servicios</h2>
+      <p class="mb-12 text-xl text-gray-700">
+        Gracias a la iniciativa, confianza y profesionalismo de cada uno de los
+        miembros, es que
+        <span class="text-rose-700 font-bold"> JBS Go</span> puede ofrecer
+        múltiples soluciones en diversos sectores del mercado:
+      </p>
+
     <div class="w-full">
       <div class="flex flex-col w-full mb-10 sm:flex-row">
         <div class="w-full mb-10 sm:mb-0 sm:w-1/2">
           <div class="relative h-full ml-0 mr-0 sm:mr-10">
             <span
-              class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-indigo-500 rounded-lg"
-            ></span>
-            <div
-              class="relative h-full p-5 bg-white border-2 border-indigo-500 rounded-lg"
-            >
+              class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-indigo-500 rounded-lg"></span>
+            <div class="relative h-full p-5 bg-white border-2 border-indigo-500 rounded-lg">
               <div class="flex items-center -mt-1">
+                <svg viewBox="0 0 24 24" class="h-12 w-12 fill-current text-indigo-500">
+                  <path d="M11.572 0c-.176 0-.31.001-.358.007a19.76 19.76 0 0 1-.364.033C7.443.346 4.25 2.185 2.228 5.012a11.875 11.875 0 0 0-2.119 5.243c-.096.659-.108.854-.108 1.747s.012 1.089.108 1.748c.652 4.506 3.86 8.292 8.209 9.695.779.25 1.6.422 2.534.525.363.04 1.935.04 2.299 0 1.611-.178 2.977-.577 4.323-1.264.207-.106.247-.134.219-.158-.02-.013-.9-1.193-1.955-2.62l-1.919-2.592-2.404-3.558a338.739 338.739 0 0 0-2.422-3.556c-.009-.002-.018 1.579-.023 3.51-.007 3.38-.01 3.515-.052 3.595a.426.426 0 0 1-.206.214c-.075.037-.14.044-.495.044H7.81l-.108-.068a.438.438 0 0 1-.157-.171l-.05-.106.006-4.703.007-4.705.072-.092a.645.645 0 0 1 .174-.143c.096-.047.134-.051.54-.051.478 0 .558.018.682.154.035.038 1.337 1.999 2.895 4.361a10760.433 10760.433 0 0 0 4.735 7.17l1.9 2.879.096-.063a12.317 12.317 0 0 0 2.466-2.163 11.944 11.944 0 0 0 2.824-6.134c.096-.66.108-.854.108-1.748 0-.893-.012-1.088-.108-1.747-.652-4.506-3.859-8.292-8.208-9.695a12.597 12.597 0 0 0-2.499-.523A33.119 33.119 0 0 0 11.573 0zm4.069 7.217c.347 0 .408.005.486.047a.473.473 0 0 1 .237.277c.018.06.023 1.365.018 4.304l-.006 4.218-.744-1.14-.746-1.14v-3.066c0-1.982.01-3.097.023-3.15a.478.478 0 0 1 .233-.296c.096-.05.13-.054.5-.054z"></path>
+                </svg>
                 <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">
                   Licenciamiento & Mayorista de tecnología
                 </h3>
               </div>
-              <p
-                class="mt-3 mb-1 text-xs font-medium text-indigo-500 uppercase"
-              >
-                ------------
-              </p>
+              <p class="mt-3 mb-1 text-xs font-medium text-indigo-500 uppercase">------------</p>
               <p class="mb-2 text-gray-600">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
                 quo soluta facere exercitationem laboriosam quisquam voluptatem
@@ -150,22 +117,17 @@ export default {
         </div>
         <div class="w-full sm:w-1/2">
           <div class="relative h-full ml-0 md:mr-10">
-            <span
-              class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-violet-500 rounded-lg"
-            ></span>
-            <div
-              class="relative h-full p-5 bg-white border-2 border-violet-500 rounded-lg"
-            >
+            <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-violet-500 rounded-lg"></span>
+            <div class="relative h-full p-5 bg-white border-2 border-violet-500 rounded-lg">
               <div class="flex items-center -mt-1">
+                <svg viewBox="0 0 24 24" class="h-12 w-12 fill-current text-violet-500">
+                  <path d="M11.572 0c-.176 0-.31.001-.358.007a19.76 19.76 0 0 1-.364.033C7.443.346 4.25 2.185 2.228 5.012a11.875 11.875 0 0 0-2.119 5.243c-.096.659-.108.854-.108 1.747s.012 1.089.108 1.748c.652 4.506 3.86 8.292 8.209 9.695.779.25 1.6.422 2.534.525.363.04 1.935.04 2.299 0 1.611-.178 2.977-.577 4.323-1.264.207-.106.247-.134.219-.158-.02-.013-.9-1.193-1.955-2.62l-1.919-2.592-2.404-3.558a338.739 338.739 0 0 0-2.422-3.556c-.009-.002-.018 1.579-.023 3.51-.007 3.38-.01 3.515-.052 3.595a.426.426 0 0 1-.206.214c-.075.037-.14.044-.495.044H7.81l-.108-.068a.438.438 0 0 1-.157-.171l-.05-.106.006-4.703.007-4.705.072-.092a.645.645 0 0 1 .174-.143c.096-.047.134-.051.54-.051.478 0 .558.018.682.154.035.038 1.337 1.999 2.895 4.361a10760.433 10760.433 0 0 0 4.735 7.17l1.9 2.879.096-.063a12.317 12.317 0 0 0 2.466-2.163 11.944 11.944 0 0 0 2.824-6.134c.096-.66.108-.854.108-1.748 0-.893-.012-1.088-.108-1.747-.652-4.506-3.859-8.292-8.208-9.695a12.597 12.597 0 0 0-2.499-.523A33.119 33.119 0 0 0 11.573 0zm4.069 7.217c.347 0 .408.005.486.047a.473.473 0 0 1 .237.277c.018.06.023 1.365.018 4.304l-.006 4.218-.744-1.14-.746-1.14v-3.066c0-1.982.01-3.097.023-3.15a.478.478 0 0 1 .233-.296c.096-.05.13-.054.5-.054z"></path>
+                </svg>
                 <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">
                   Ciberseguridad & Videovigilancia
                 </h3>
               </div>
-              <p
-                class="mt-3 mb-1 text-xs font-medium text-violet-500 uppercase"
-              >
-                ------------
-              </p>
+              <p class="mt-3 mb-1 text-xs font-medium text-violet-500 uppercase">------------</p>
               <p class="mb-2 text-gray-600">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
                 quo soluta facere exercitationem laboriosam quisquam voluptatem
@@ -179,22 +141,17 @@ export default {
       <div class="flex flex-col w-full mb-5 sm:flex-row">
         <div class="w-full mb-10 sm:mb-0 sm:w-1/2">
           <div class="relative h-full ml-0 mr-0 sm:mr-10">
-            <span
-              class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-purple-400 rounded-lg"
-            ></span>
-            <div
-              class="relative h-full p-5 bg-white border-2 border-purple-400 rounded-lg"
-            >
+            <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-purple-400 rounded-lg"></span>
+            <div class="relative h-full p-5 bg-white border-2 border-purple-400 rounded-lg">
               <div class="flex items-center -mt-1">
+                <svg viewBox="0 0 24 24" class="h-12 w-12 fill-current text-purple-500">
+                  <path d="M11.572 0c-.176 0-.31.001-.358.007a19.76 19.76 0 0 1-.364.033C7.443.346 4.25 2.185 2.228 5.012a11.875 11.875 0 0 0-2.119 5.243c-.096.659-.108.854-.108 1.747s.012 1.089.108 1.748c.652 4.506 3.86 8.292 8.209 9.695.779.25 1.6.422 2.534.525.363.04 1.935.04 2.299 0 1.611-.178 2.977-.577 4.323-1.264.207-.106.247-.134.219-.158-.02-.013-.9-1.193-1.955-2.62l-1.919-2.592-2.404-3.558a338.739 338.739 0 0 0-2.422-3.556c-.009-.002-.018 1.579-.023 3.51-.007 3.38-.01 3.515-.052 3.595a.426.426 0 0 1-.206.214c-.075.037-.14.044-.495.044H7.81l-.108-.068a.438.438 0 0 1-.157-.171l-.05-.106.006-4.703.007-4.705.072-.092a.645.645 0 0 1 .174-.143c.096-.047.134-.051.54-.051.478 0 .558.018.682.154.035.038 1.337 1.999 2.895 4.361a10760.433 10760.433 0 0 0 4.735 7.17l1.9 2.879.096-.063a12.317 12.317 0 0 0 2.466-2.163 11.944 11.944 0 0 0 2.824-6.134c.096-.66.108-.854.108-1.748 0-.893-.012-1.088-.108-1.747-.652-4.506-3.859-8.292-8.208-9.695a12.597 12.597 0 0 0-2.499-.523A33.119 33.119 0 0 0 11.573 0zm4.069 7.217c.347 0 .408.005.486.047a.473.473 0 0 1 .237.277c.018.06.023 1.365.018 4.304l-.006 4.218-.744-1.14-.746-1.14v-3.066c0-1.982.01-3.097.023-3.15a.478.478 0 0 1 .233-.296c.096-.05.13-.054.5-.054z"></path>
+                </svg>
                 <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">
                   Mantenimiento & Servicio
                 </h3>
               </div>
-              <p
-                class="mt-3 mb-1 text-xs font-medium text-purple-400 uppercase"
-              >
-                ------------
-              </p>
+              <p class="mt-3 mb-1 text-xs font-medium text-purple-400 uppercase">------------</p>
               <p class="mb-2 text-gray-600">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
                 quo soluta facere exercitationem laboriosam quisquam voluptatem
@@ -206,22 +163,18 @@ export default {
         </div>
         <div class="w-full mb-10 sm:mb-0 sm:w-1/2">
           <div class="relative h-full ml-0 mr-0 sm:mr-10">
-            <span
-              class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-fuchsia-400 rounded-lg"
-            ></span>
+            <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-fuchsia-400 rounded-lg"></span>
             <div
-              class="relative h-full p-5 bg-white border-2 border-fuchsia-400 rounded-lg"
-            >
+              class="relative h-full p-5 bg-white border-2 border-fuchsia-400 rounded-lg">
               <div class="flex items-center -mt-1">
+                <svg viewBox="0 0 24 24" class="h-12 w-12 fill-current text-fuchsia-500">
+                  <path d="M11.572 0c-.176 0-.31.001-.358.007a19.76 19.76 0 0 1-.364.033C7.443.346 4.25 2.185 2.228 5.012a11.875 11.875 0 0 0-2.119 5.243c-.096.659-.108.854-.108 1.747s.012 1.089.108 1.748c.652 4.506 3.86 8.292 8.209 9.695.779.25 1.6.422 2.534.525.363.04 1.935.04 2.299 0 1.611-.178 2.977-.577 4.323-1.264.207-.106.247-.134.219-.158-.02-.013-.9-1.193-1.955-2.62l-1.919-2.592-2.404-3.558a338.739 338.739 0 0 0-2.422-3.556c-.009-.002-.018 1.579-.023 3.51-.007 3.38-.01 3.515-.052 3.595a.426.426 0 0 1-.206.214c-.075.037-.14.044-.495.044H7.81l-.108-.068a.438.438 0 0 1-.157-.171l-.05-.106.006-4.703.007-4.705.072-.092a.645.645 0 0 1 .174-.143c.096-.047.134-.051.54-.051.478 0 .558.018.682.154.035.038 1.337 1.999 2.895 4.361a10760.433 10760.433 0 0 0 4.735 7.17l1.9 2.879.096-.063a12.317 12.317 0 0 0 2.466-2.163 11.944 11.944 0 0 0 2.824-6.134c.096-.66.108-.854.108-1.748 0-.893-.012-1.088-.108-1.747-.652-4.506-3.859-8.292-8.208-9.695a12.597 12.597 0 0 0-2.499-.523A33.119 33.119 0 0 0 11.573 0zm4.069 7.217c.347 0 .408.005.486.047a.473.473 0 0 1 .237.277c.018.06.023 1.365.018 4.304l-.006 4.218-.744-1.14-.746-1.14v-3.066c0-1.982.01-3.097.023-3.15a.478.478 0 0 1 .233-.296c.096-.05.13-.054.5-.054z"></path>
+                </svg>
                 <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">
                   Energía & Sistemas de detección de incendios
                 </h3>
               </div>
-              <p
-                class="mt-3 mb-1 text-xs font-medium text-fuchsia-400 uppercase"
-              >
-                ------------
-              </p>
+              <p class="mt-3 mb-1 text-xs font-medium text-fuchsia-400 uppercase">------------</p>
               <p class="mb-2 text-gray-600">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
                 quo soluta facere exercitationem laboriosam quisquam voluptatem
@@ -233,20 +186,17 @@ export default {
         </div>
         <div class="w-full sm:w-1/2">
           <div class="relative h-full ml-0 md:mr-10">
-            <span
-              class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-pink-500 rounded-lg"
-            ></span>
-            <div
-              class="relative h-full p-5 bg-white border-2 border-pink-500 rounded-lg"
-            >
+            <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-pink-500 rounded-lg"></span>
+            <div class="relative h-full p-5 bg-white border-2 border-pink-500 rounded-lg">
               <div class="flex items-center -mt-1">
+                <svg viewBox="0 0 24 24" class="h-12 w-12 fill-current text-pink-500">
+                  <path d="M11.572 0c-.176 0-.31.001-.358.007a19.76 19.76 0 0 1-.364.033C7.443.346 4.25 2.185 2.228 5.012a11.875 11.875 0 0 0-2.119 5.243c-.096.659-.108.854-.108 1.747s.012 1.089.108 1.748c.652 4.506 3.86 8.292 8.209 9.695.779.25 1.6.422 2.534.525.363.04 1.935.04 2.299 0 1.611-.178 2.977-.577 4.323-1.264.207-.106.247-.134.219-.158-.02-.013-.9-1.193-1.955-2.62l-1.919-2.592-2.404-3.558a338.739 338.739 0 0 0-2.422-3.556c-.009-.002-.018 1.579-.023 3.51-.007 3.38-.01 3.515-.052 3.595a.426.426 0 0 1-.206.214c-.075.037-.14.044-.495.044H7.81l-.108-.068a.438.438 0 0 1-.157-.171l-.05-.106.006-4.703.007-4.705.072-.092a.645.645 0 0 1 .174-.143c.096-.047.134-.051.54-.051.478 0 .558.018.682.154.035.038 1.337 1.999 2.895 4.361a10760.433 10760.433 0 0 0 4.735 7.17l1.9 2.879.096-.063a12.317 12.317 0 0 0 2.466-2.163 11.944 11.944 0 0 0 2.824-6.134c.096-.66.108-.854.108-1.748 0-.893-.012-1.088-.108-1.747-.652-4.506-3.859-8.292-8.208-9.695a12.597 12.597 0 0 0-2.499-.523A33.119 33.119 0 0 0 11.573 0zm4.069 7.217c.347 0 .408.005.486.047a.473.473 0 0 1 .237.277c.018.06.023 1.365.018 4.304l-.006 4.218-.744-1.14-.746-1.14v-3.066c0-1.982.01-3.097.023-3.15a.478.478 0 0 1 .233-.296c.096-.05.13-.054.5-.054z"></path>
+                </svg>
                 <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">
                   Logística & transportación empresarial
                 </h3>
               </div>
-              <p class="mt-3 mb-1 text-xs font-medium text-pink-500 uppercase">
-                ------------
-              </p>
+              <p class="mt-3 mb-1 text-xs font-medium text-pink-500 uppercase">------------</p>
               <p class="mb-2 text-gray-600">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
                 quo soluta facere exercitationem laboriosam quisquam voluptatem
