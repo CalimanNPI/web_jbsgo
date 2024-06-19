@@ -37,53 +37,79 @@ export default {
 </script>
 
 <template>
-  <div
-    class="mx-auto h-full px-4 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8"
-  >
-    <div class="flex flex-col items-center justify-between lg:flex-row">
-      <div class=" ">
-        <div class="lg:max-w-xl lg:pr-5">
-          <p class="flex text-sm uppercase text-rose-700 items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mr-1 inline h-10 w-10" viewBox="0 0 300 300">
-              <circle cx="159.09" cy="160.12" r="119.42" style="fill: rgb(190, 18, 60)"></circle>
-              <circle cx="140.91" cy="139.88" r="119.42" style="fill: none;stroke: rgb(37, 38, 52);stroke-miterlimit: 10;stroke-width: 3px;"></circle>
-            </svg>
-            Usamos la tecnología a su favor
-          </p>
-          <h2 class="mb-6 max-w-lg text-5xl font-medium leading-snug tracking-tight text-gray-700 sm:text-7xl sm:leading-snug">
-            Juntos Brindamos
-            <span class="my-1 inline-block border-b-8 border-gray-900 bg-rose-700 px-4 font-extrabold text-white" >Soluciones</span>
-          </h2>
-          <p class="text-base text-gray-700">
-            Somos el puente entre la tecnología y los negocios
-          </p>
+
+
+<header class=" relative flex max-w-screen-xl flex-col overflow-hidden px-4 py-4 text-slate-700 md:mx-auto md:flex-row md:items-center">
+  <a href="#" class="flex cursor-pointer items-center whitespace-nowrap text-2xl font-black">
+    the future
+  </a>
+  <input type="checkbox" class="peer hidden" id="navbar-open" />
+  <label class="absolute top-5 right-7 cursor-pointer md:hidden" for="navbar-open">
+    <span class="sr-only">Toggle Navigation</span>
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+  </label>
+  <nav aria-label="Header Navigation" class="flex max-h-0 w-full flex-col items-center justify-between overflow-hidden transition-all peer-checked:mt-8 peer-checked:max-h-56 md:ml-24 md:max-h-full md:flex-row md:items-start">
+    <ul class="flex flex-col items-center space-y-2 md:ml-auto md:flex-row md:space-y-0">
+      <li class="font-bold md:mr-12"><a href="#">Nosotros</a></li>
+      <li class="md:mr-12">
+        <button class="rounded-full border-2 border-rose-700 px-6 py-1 text-rose-700 transition-colors hover:bg-rose-700 hover:text-white">Servicios</button>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<div class="bg-rose-50 relative">
+  <div class="mx-auto max-w-xl lg:max-w-screen-xl py-16 lg:py-32 ">
+    <div class="mb-16 text-center lg:mb-0 lg:max-w-lg lg:text-">
+      <div class="mb-6 max-w-xl">
+        <div>
+          <p class="mb-4 inline-block rounded-full bg-white px-4 py-3 text-sm font-semibold tracking-wider text-rose-700 border border-rose-700">Juntos Brindamos Soluciones</p>
         </div>
-        <div class="mt-10 flex flex-col items-center md:flex-row">
-          <!--<a href="/" class="mb-3 inline-flex h-12 w-full items-center justify-center rounded bg-gray-700 px-6 font-medium tracking-wide text-white shadow-md transition hover:bg-rose-700 focus:outline-none md:mr-4 md:mb-0 md:w-auto" >Stream Now</a>
-          <a href="/" aria-label="" class="group inline-flex items-center font-semibold text-gray-700" >Watch how it works
-            <svg xmlns="http://www.w3.org/2000/svg" class="ml-4 h-6 w-6 transition-transform group-hover:translate-x-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+        <h2 class="mb-6 max-w-lg font-sans text-4xl font-black tracking-tight text-slate-700 sm:text-6xl sm:leading-snug">
+          Somos el puente entre la <span class="inline-block text-rose-700">tecnología y los negocios</span>
+        </h2>
+        <p class="font-sans text-lg text-gray-700 md:text-lg">
+          Nuestros sistemas cuentan con tecnología avanzada que le permite tener
+          mayor control sobre su negocio. Maximizando el crecimiento y los
+          resultados fijados para acelerar los negocios de sus socios adaptados
+          a sus necesidades.
+        </p>
+      </div>
+      <div class="flex flex-col items-center justify-center space-y-2 sm:flex-row sm:space-y-0 sm:space-x-2 lg:justify-start">
+        <button class="relative mt-4 rounded-lg border-2 border-rose-700 bg-rose-700 px-6 py-2 font-medium text-white transition hover:translate-y-1">
+          <div class="-scale-x-100 absolute left-0 -bottom-10 inline-flex h-10 w-10 -rotate-12 text-rose-700">
+            <svg viewBox="0 0 82 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 21.3963C0.189514 19.1422 0.475057 16.717 0.554355 14.2852C0.582363 13.435 0.32301 12.6326 1.24839 12.1517C1.43863 12.053 1.7169 11.8956 1.85767 11.9661C4.2446 13.1626 6.90906 13.1934 9.41312 13.8814C11.09 14.3423 12.6519 15.089 13.7134 16.5797C13.9251 16.8774 13.9105 17.3427 14 17.7305C13.6228 17.8077 13.2227 18.01 12.8727 17.9421C10.3283 17.4477 7.78825 16.9245 5.25946 16.353C4.46612 16.1737 4.32244 16.4862 4.22859 17.1961C4.0118 18.8342 3.66769 20.4541 3.43198 22.0899C3.33086 22.7891 3.36905 23.509 3.35123 24.2197C3.34977 24.2791 3.44107 24.3474 3.43052 24.3989C3.32213 24.9318 3.2712 25.8796 3.07114 25.9142C2.49387 26.0144 1.77655 25.8915 1.25603 25.5961C-0.352473 24.6832 0.143681 23.0129 0 21.3963Z" fill="currentColor" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M33.9279 29.9296C33.9687 30.0252 34.0103 30.1211 34.0512 30.2167L36.776 28.708C36.7189 28.6018 36.6613 28.4961 36.6041 28.3903C35.7123 28.9033 34.8197 29.4166 33.9279 29.9296ZM55.213 27.9357C55.2513 28.0076 55.2895 28.0795 55.3278 28.1513C56.8382 27.5018 58.3486 26.8518 59.8593 26.2019C59.8129 26.092 59.7661 25.9821 59.7197 25.8726C58.2175 26.5602 56.7153 27.2481 55.213 27.9357ZM40.7384 18.9565C40.5279 17.8215 40.3393 16.6815 40.0998 15.5525C39.952 14.8551 39.5106 14.6711 38.8099 14.825C36.6153 15.3082 34.9909 17.2686 34.7963 19.6189C34.584 22.1806 36.0472 23.7605 37.8517 25.1395C37.9927 25.2475 38.5155 25.0604 38.6986 24.8591C40.2045 23.1998 40.6396 21.163 40.7384 18.9565ZM47.8846 27.7513C53.9169 27.9699 58.9887 25.6539 63.5351 21.8258C68.7108 17.4677 72.7252 12.1435 76.2413 6.39113C77.3061 4.64903 78.3271 2.87833 79.4328 1.16371C79.7291 0.70344 80.2137 0.234515 80.706 0.0824723C81.0457 -0.0225277 81.5473 0.410268 81.9765 0.603333C81.8444 0.859247 81.7237 1.12306 81.5774 1.37032C81.1827 2.03645 80.7194 2.66758 80.3867 3.36306C79.3033 5.6264 78.3041 7.93113 77.1981 10.1824C76.4525 11.6998 75.639 13.1905 74.7457 14.6225C74.1814 15.5269 73.3694 16.269 72.7471 17.1414C71.7606 18.5237 70.9604 20.0611 69.8622 21.3395C68.1531 23.33 66.4111 25.3434 64.4139 27.0174C59.9989 30.718 54.9038 32.5263 49.0801 32.1605C46.3701 31.9904 43.6835 31.9283 41.122 30.8655C40.842 30.7492 40.3185 30.9333 40.0448 31.1527C37.2899 33.3656 34.1239 34.5277 30.6632 34.7456C28.0734 34.909 25.4198 35.1171 22.8828 34.7219C20.7546 34.3908 18.675 33.3742 16.7198 32.3694C14.9819 31.4756 13.3686 30.2773 11.8348 29.0418C9.65017 27.2812 8.09522 24.9795 7.06601 22.3556C6.91824 21.9789 7.17257 21.2819 7.46774 20.9267C7.79559 20.5315 8.26675 20.7212 8.80326 20.9647C10.4826 21.7271 11.1635 23.3172 12.0776 24.6916C13.809 27.2959 16.297 28.8333 19.144 29.6515C24.0015 31.0477 28.8342 30.4606 33.5239 28.7422C36.0572 27.8134 36.0323 27.708 34.1863 25.8643C31.7566 23.438 30.4122 20.5417 30.5982 17.0518C30.8143 13.0012 34.1347 10.1538 38.1338 10.4515C39.3892 10.5452 40.2439 11.3239 41.0648 12.1255C42.9294 13.9466 43.9712 16.2194 44.3347 18.7977C44.7112 21.4648 44.7806 24.1113 43.5286 26.6189C43.2264 27.2244 43.5171 27.489 44.1483 27.5187C45.3947 27.5778 46.6393 27.6719 47.8846 27.7513Z" fill="currentColor" />
             </svg>
-          </a>-->
-        </div>
+          </div>
+          Contactanos
+        </button>
       </div>
 
-      <div class="relative text-rose-600 lg:ml-32 lg:w-1/2 hidden lg:block">
-        <div class="border-b-8 border-b-rose-600 max-w-lg mx-auto mb-10">
-          <img
-            class="w-full h-full object-contain transition-all duration-300 ease-in-out hover:scale-105"
-            src="/img/Business.svg"
-            alt=""
-          />
-        </div>
-      </div>
+    </div>
+    <div class="hidden h-full justify-center overflow-hidden lg:absolute lg:bottom-0 lg:right-0 lg:flex lg:w-1/2 lg:items-end lg:justify-start">
+      <svg class="h-full w-full" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="img1" x="0" y="0" width="1" height="1">
+            <image x="0" y="0" width="100%" height="100%" preserveAspectRatio="xMaxYMax slice" href="https://images.unsplash.com/photo-1575218823251-f9d243b6f720?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
+          </pattern>
+        </defs>
+        <path fill="url(#img1)" d="M40,-62.6C52.2,-54.5,62.5,-43.9,66.9,-31.4C71.3,-18.9,69.6,-4.6,65.9,8.3C62.2,21.1,56.4,32.5,49.2,45.2C42.1,57.9,33.7,72.1,22.2,75.3C10.7,78.5,-3.9,70.7,-14.8,62.1C-25.7,53.5,-32.8,44.1,-44.9,35.8C-57,27.5,-74,20.3,-82.1,7.7C-90.3,-4.8,-89.5,-22.7,-80.8,-34.8C-72,-46.9,-55.2,-53.3,-40.4,-60.2C-25.6,-67,-12.8,-74.3,0.6,-75.2C13.9,-76.1,27.9,-70.6,40,-62.6Z" transform="translate(100 100)" />
+      </svg>
     </div>
   </div>
+</div>
 
-  <div class=" relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0 -top-5" id="services">
-  
-      <h2 class="mb-10 m text-5xl font-extrabold leading-tight text-rose-700 text-center">Servicios</h2>
-      <p class="mb-12 text-xl text-gray-700">
+
+
+
+  <div class="flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0" id="services">
+      <p class="text-slate-500 mt-10 text-sm font-semibold tracking-wider text-center uppercase">Usamos la tecnología a su favor</p>
+      <h2 class="mb-10 text-5xl font-extrabold leading-tight text-rose-700 text-center">Servicios</h2>
+      <p class="mx-30 mb-12 text-xl text-center text-gray-700">
         Gracias a la iniciativa, confianza y profesionalismo de cada uno de los
         miembros, es que
         <span class="text-rose-700 font-bold"> JBS Go</span> puede ofrecer
@@ -241,8 +267,14 @@ export default {
       class="container mx-auto py-8 px-4 md:px-0 md:flex md:justify-center md:items-center"
     >
       <div class="md:w-1/2 lg:w-1/3 md:mr-8">
+        <p class="text-lg font mb-4 text-gray-800">
+          Nuestros sistemas cuentan con tecnología avanzada que le permite tener
+          mayor control sobre su negocio. Maximizando el crecimiento y los
+          resultados fijados para acelerar los negocios de sus socios adaptados
+          a sus necesidades.
+        </p>
         <h1 class="text-2xl font-bold mb-4 text-rose-700">
-          Somos el puente entre la tecnología y los negocios
+          Usamos la tecnología a su favor
         </h1>
         <p class="text-lg font mb-4 text-gray-800">
           Nuestros sistemas cuentan con tecnología avanzada que le permite tener
