@@ -5,7 +5,7 @@
 
 <template>
 
-  <header id="top" class="relative flex max-w-screen-xl flex-col overflow-hidden px-4 py-4 text-rose-700 md:mx-auto md:flex-row md:items-center">
+  <header id="top" class="absolute flex max-w-screen-xl flex-col overflow-hidden px-4 py-4 text-rose-700 md:mx-auto md:flex-row md:items-center">
     <RouterLink to="/" class="flex items-center whitespace-nowrap text-2xl font-black">
       <span class="mr-2 text-4xl text-rose-700"></span>JBS GO
     </RouterLink>
