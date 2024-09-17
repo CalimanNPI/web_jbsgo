@@ -71,7 +71,7 @@ export default {
               Contacta con nosotros
             </span>
             <h2 class="text-rose-700 mb-6 text-[25] font-bold uppercase sm:text-[30px] lg:text-[30px] xl:text-[30px]">
-              Trabajemos juntos, nuestro equipo está aquí para ayudar..
+              Trabajemos juntos, nuestro equipo está aquí para ayudar...
             </h2>
             <p class="text-base leading-relaxed text-body-color mb-9">
               Seleccionar el sistema adecuado para su negocio implica comprender
