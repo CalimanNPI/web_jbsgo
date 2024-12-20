@@ -1,6 +1,6 @@
 <template>
   <!-- Section 2 -->
-  <section class="px-2 py-32 md:px-0 bg-slate-900">
+  <section class="px-2 py-32 md:px-0 bg-slate-900 bg-gradient-to-r from-slate-900 to-rose-900">
     <div class="container items-center max-w-6xl px-8 mx-auto xl:px-5">
       <div class="flex flex-wrap items-center sm:-mx-3">
         <div
@@ -158,17 +158,17 @@
       <div class="grid grid-cols-2 gap-5">
         <img
           class="object-cover w-full h-56 col-span-2 rounded shadow-lg"
-          src="/img/imgs/logistica/3.jfif"
+          src="/img/trans-1.jfif"
           alt=""
         />
         <img
           class="object-cover w-full h-48 rounded shadow-lg"
-          src="/img/imgs/logistica/2.jfif"
+          src="/img/trans-2.jfif"
           alt=""
         />
         <img
           class="object-cover w-full h-48 rounded shadow-lg"
-          src="/img/imgs/logistica/1.jfif"
+          src="/img/trans-3.jfif"
           alt=""
         />
       </div>
@@ -271,7 +271,7 @@
     <div class="relative">
       <img
         class="object-cover w-full h-56 sm:h-96"
-        src="https://images.pexels.com/photos/3184419/pexels-photo-3184419.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+        src="/img/trans-4.jfif"
         alt=""
       />
       <div class="absolute inset-0 bg-slate-800 bg-opacity-50"></div>
@@ -294,7 +294,7 @@
       </svg>
       <img
         class="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
-        src="/img/imgs/logistica/EMPRESARIAL1.jfif"
+        src="/img/trans-auto-1.jfif"
         alt=""
       />
     </div>
@@ -335,7 +335,7 @@
       </svg>
       <img
         class="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
-        src="/img/imgs/logistica/EJECUTIVAS1.jfif"
+        src="/img/trans-auto-2.jfif"
         alt=""
       />
     </div>
@@ -377,7 +377,7 @@
       </svg>
       <img
         class="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
-        src="/img/imgs/logistica/SPRINTER1.jfif"
+        src="/img/trans-auto-3.jfif"
         alt=""
       />
     </div>
@@ -403,22 +403,14 @@
     </div>
   </div>
 
-  <section
-    class="overflow-hidden bg-[url(/img/img2.jpg)] bg-cover bg-center bg-no-repeat"
-  >
-    <div class="bg-black/50 p-8 md:p-12 lg:px-16 lg:py-24">
-      <div class="flex justify-end">
-        <h2 class="text-2xl font-bold text-white sm:text-3xl md:text-5xl"></h2>
 
-        <p
-          class=" max-w-lg text-white/90 font-bold md:mt-6 md:block md:text-lg md:leading-relaxed text-justify"
-        >
-          En JBS Go Comprende el valor del tiempo y lo importante que es llegar
-          al lugar indicado en el momento justo. Comprometidos en ofrecer una
+  <div class="relative w-full h-full bg-cover bg-center flex items-center justify-center p-8 dui-bg-fixed"
+        style="background-image: url('/img/trans-5.jpg');">
+        <div
+            class="p-8 bg-slate-900 bg-opacity-50 text-white/75 rounded-xl shadow-lg text-center w-full max-w-full mx-2">
+            <h1 class="text-4xl font-bold mb-4">    Comprometidos en ofrecer una
           gama completa de opciones para resolver los desafíos de seguridad,
-          movilidad y puntualidad de nuestros clientes
-        </p>
-      </div>
+          movilidad y puntualidad de nuestros clientes</h1>
+        </div>
     </div>
-  </section>
 </template>

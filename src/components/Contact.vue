@@ -62,7 +62,7 @@ export default {
 </script>
 
 <template>
-  <section class="relative z-10 overflow-hidden py-20 lg:py-[120px] text-slate-900"  id="contacto">
+  <section class="relative z-10 overflow-hidden py-20 lg:py-[120px] text-slate-900"  id="contact">
     <div class="container mx-auto">
       <div class="flex flex-wrap -mx-4 lg:justify-between">
         <div class="w-full px-4 lg:w-1/2 xl:w-6/12">
@@ -136,16 +136,16 @@ export default {
 
 
               <div class="mb-6 mt-10">
-                <input type="text" placeholder="Tú nombre" v-model="data.name" class="border-stroke text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"/>
+                <input type="text" placeholder="Tú nombre" v-model="data.name" class="border-rose-500 text-body-color focus:border-rose-500 w-full rounded border py-3 px-[14px] text-base outline-none"/>
               </div>
               <div class="mb-6">
-                <input v-model="data.email" type="email" placeholder="Tú correo electrónicos" class="border-stroke text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"/>
+                <input v-model="data.email" type="email" placeholder="Tú correo electrónicos" class="border-rose-500 text-body-color focus:border-rose-500 w-full rounded border py-3 px-[14px] text-base outline-none"/>
               </div>
               <div class="mb-6">
-                <textarea v-model="data.message" rows="6" placeholder="Tú mensage" class="border-stroke text-body-color focus:border-primary w-full resize-none rounded border py-3 px-[14px] text-base outline-none"></textarea>
+                <textarea v-model="data.message" rows="6" placeholder="Tú mensage" class="border-rose-500 text-body-color focus:border-rose-500 w-full resize-none rounded border py-3 px-[14px] text-base outline-none"></textarea>
               </div>
               <div>
-                <button type="submit" class="w-full p-3 text-white transition border rounded border-primary bg-gradient-to-br from-rose-500 to-rose-900 focus:ring-4 focus:outline-none focus:ring-purple-200">
+                <button type="submit" class="w-full p-3 text-white transition border rounded border-rose-500 bg-gradient-to-br from-rose-500 to-rose-900 focus:ring-4 focus:outline-none focus:ring-rose-500">
                   Enviar Mensaje
                 </button>
               </div>

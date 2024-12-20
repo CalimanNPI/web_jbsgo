@@ -1,113 +1,59 @@
 <template>
     <div :class="[
         scrollPosition > 500
-            ? 'bg-white fixed drop-shadow-2xl text-azul-500 '
-            : 'bg-transparent absolute text-gray-100',
+            ? 'bg-white fixed drop-shadow-2xl text-rose-700 '
+            : 'bg-transparent absolute text-slate-100',
     ]" class="' z-50 px-4 py-5 w-full nav1'">
-        <div class="relative flex items-center justify-between">
-            <a @click="goToTop()" href="#" aria-label="Company" title="Company" class="inline-flex items-center">
-                <span class="ml-2 text-xl font-bold tracking-wide uppercase">JBS GO</span>
-            </a>
-            <ul class="items-center hidden space-x-8 lg:flex">
-                <li>
-                    <a href="#Trasporte" aria-label="Our product" title="Our product"
-                        class="hover:scale-300 hover:underline underline-offset-4 text-base font-extrabold leading-none tracking">Trasporte</a>
-                </li>
-                <li>
-                    <a href="#Ejecutivo" aria-label="Our product" title="Our product"
-                        class="hover:scale-125 hover:underline underline-offset-4 text-base font-extrabold leading-none tracking">Ejecutivo</a>
-                </li>
-                <li>
-                    <a href="#Tours" aria-label="Product pricing" title="Product pricing"
-                        class="hover:scale-125 hover:underline underline-offset-4 text-base font-extrabold leading-none tracking">Tours</a>
-                </li>
-                <li>
-                    <a href="#Sistema" aria-label="About us" title="About us"
-                        class="hover:scale-125 hover:underline underline-offset-4 text-base font-extrabold leading-none tracking">Sistema</a>
-                </li>
-                <li>
-                    <a href="#Nosotros" aria-label="About us" title="About us"
-                        class="hover:scale-125 hover:underline underline-offset-4 text-base font-extrabold leading-none tracking">Nosotros</a>
-                </li>
-            </ul>
-            <ul class="items-center hidden space-x-8 lg:flex">
-                <li></li>
-            </ul>
-
-            <button data-modal-target="defaultModal" data-modal-toggle="defaultModal"
-                class="space-x-8 lg:flex inline-flex items-center text-gray-200 justify-center h-12 px-6 font-medium tracking-wide transition rounded shadow-md bg-azul-500 focus:shadow-outline focus:outline-none ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-azul-700 duration-300"
-                aria-label="Sign up" title="Sign up">
-                Contacto
-            </button>
-
-            <div class="lg:hidden">
-                <button aria-label="Open Menu" title="Open Menu"
-                    class="hover:scale-125 p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline"
-                    @click="isMenuOpen = true">
-                    <svg class="w-7" viewBox="0 0 24 24">
-                        <path fill="currentColor"
-                            d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"></path>
-                        <path fill="currentColor" d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z">
-                        </path>
-                        <path fill="currentColor"
-                            d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"></path>
-                    </svg>
-                </button>
-                <div v-if="isMenuOpen" class="absolute top-0 left-0 w-full text-gray-200 bg-gray-900">
-                    <div class="p-5 border rounded shadow-sm">
-                        <div class="flex items-center justify-between mb-4">
-                            <div>
-                                <a href="/" aria-label="Company" title="Company"
-                                    class="hover:scale-125 inline-flex items-center">
-                                    <span class="ml-2 text-xl font-bold tracking-wide uppercase">JBS GO</span>
-                                </a>
-                            </div>
-                            <div>
-                                <button aria-label="Close Menu" title="Close Menu"
-                                    class="p-2 -mt-2 -mr-2 transition duration-200 rounded hover:bg-gray-100 focus:bg-gray-100 focus:outline-none focus:shadow-outline"
-                                    @click="isMenuOpen = false">
-                                    <svg class="w-5" viewBox="0 0 24 24">
-                                        <path fill="currentColor"
-                                            d="M19.7,4.3c-0.4-0.4-1-0.4-1.4,0L12,10.6L5.7,4.3c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l6.3,6.3l-6.3,6.3 c-0.4,0.4-0.4,1,0,1.4C4.5,19.9,4.7,20,5,20s0.5-0.1,0.7-0.3l6.3-6.3l6.3,6.3c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3 c0.4-0.4,0.4-1,0-1.4L13.4,12l6.3-6.3C20.1,5.3,20.1,4.7,19.7,4.3z">
-                                        </path>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <nav>
-                            <ul class="space-y-4">
-                                <li>
-                                    <a href="#Trasporte" aria-label="Our product"
-                                        class="hover:scale-125 hover:underline underline-offset-4 font-medium tracking-wide transition-colors duration-200 hover:text-azul-500">Trasporte
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#Ejecutivo" aria-label="Our product"
-                                        class="hover:scale-125 hover:underline underline-offset-4 font-medium tracking-wide transition-colors duration-200 hover:text-azul-500">
-                                        Ejecutivo</a>
-                                </li>
-                                <li>
-                                    <a href="#Tours" aria-label="Product pricing"
-                                        class="hover:scale-125 hover:underline underline-offset-4 font-medium tracking-wide transition-colors duration-200 hover:text-azul-500">Tours</a>
-                                </li>
-                                <li>
-                                    <a href="#Sistema" aria-label="About us"
-                                        class="hover:scale-125 hover:underline underline-offset-4 font-medium tracking-wide transition-colors duration-200 hover:text-azul-500">Sistema</a>
-                                </li>
-                                <li>
-                                    <a href="#Nosotros" aria-label="About us"
-                                        class="hover:scale-125 hover:underline underline-offset-4 font-medium tracking-wide transition-colors duration-200 hover:text-azul-500">Nosotros</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
+       <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
+        <RouterLink to="/home" class="flex items-center">
+            <!--<img src="https://www.svgrepo.com/show/499962/music.svg" class="h-6 mr-3 sm:h-9" alt="Landwind Logo">-->
+            <span class="self-center text-xl font-black whitespace-nowrap">JBS GO.</span>
+        </RouterLink>
+        <div class="flex items-center lg:order-2">
+            <div class="hidden mt-2 mr-4 sm:inline-block">
+                <span></span>
             </div>
+
+            <RouterLink to="/home"
+                class="text-white bg-rose-700 hover:bg-rose-800 focus:ring-4 focus:ring-rose-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 focus:outline-none">Servicios</RouterLink>
+            <button data-collapse-toggle="mobile-menu-2" type="button"
+				class="inline-flex items-center p-2 ml-1 text-sm text-slate-500 rounded-lg lg:hidden hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-slate-200"
+				aria-controls="mobile-menu-2" aria-expanded="true">
+				<span class="sr-only">Open main menu</span>
+				<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd"
+						d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+						clip-rule="evenodd"></path>
+				</svg>
+				<svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd"
+						d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+						clip-rule="evenodd"></path>
+				</svg>
+			</button>
+            
         </div>
+        <div class="items-center justify-between w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+            <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 ">
+                <!--<li>
+                    <a href="#about"
+                        class="block py-2 pl-3 pr-4 lg:p-0 text-slate-700 hover:text-rose-700"
+                        aria-current="page">Nosotros</a>
+                </li>
+                <li>
+                    <a href="#contact"
+                        class="block py-2 pl-3 pr-4 lg:p-0 text-slate-700 hover:text-rose-700">Contact</a>
+                </li>-->
+            </ul>
+        </div>
+    </div>
+
     </div>
 </template>
 
 <script>
+import { RouterLink } from 'vue-router';
+
 export default {
     data() {
         return {
@@ -126,4 +72,5 @@ export default {
         window.addEventListener("scroll", this.updateScroll);
     },
 };
+
 </script>

@@ -1,5 +1,29 @@
 <template>
 
+<div class="flex p-20 justify-center items-center">
+    <div class="text-center max-w-6xl mx-10">
+      <p class="my-3 text-sm tracking-widest text-indigo-500 uppercase"></p>
+      <h1
+        class="my-3 text-3xl font-bold tracking-tight text-gray-800 md:text-5xl"
+      >
+        Best Service Offered Here
+      </h1>
+      <div>
+        <p
+          class="max-w-2xl mx-auto my-2 text-base text-gray-500 md:leading-relaxed md:text-xl"
+        >
+          Introducing our latest service offering. Get started quickly and
+          efficiently with our range of solutions. Designed to meet your needs
+          using the latest technologies.
+        </p>
+      </div>
+      <div
+        class="flex flex-col items-center justify-center gap-5 mt-6 md:flex-row"
+      ></div>
+    </div>
+  </div>
+
+
 <div class="bg-gray-900 text-white py-20">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col gap-8 lg:flex-row items-center">

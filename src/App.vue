@@ -2,6 +2,7 @@
 import Footer from "./components/Footer.vue";
 import Navbar from "./components/Navbar.vue";
 import Contact from "./components/Contact.vue";
+import Icons from "./components/Icons.vue";
 
 </script>
 
@@ -12,6 +13,7 @@ import Contact from "./components/Contact.vue";
       <RouterView />
     </Transition>
   </main>
+  <Icons />
   <Contact />
   <Footer />
 </template>

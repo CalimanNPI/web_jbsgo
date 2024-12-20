@@ -1,6 +1,8 @@
 <template>
+
+  
   <!-- Section 2 -->
-  <section class="px-2 py-32 md:px-0 bg-slate-900">
+  <section class="px-2 py-32 md:px-0 bg-slate-900 bg-gradient-to-r from-slate-900 to-rose-900" >
     <div class="container items-center max-w-6xl px-8 mx-auto xl:px-5">
       <div class="flex flex-wrap items-center sm:-mx-3">
         <div
@@ -13,7 +15,7 @@
             class="w-full pb-6 space-y-6 sm:max-w-md lg:max-w-lg md:space-y-4 lg:space-y-8 xl:space-y-9 sm:pr-5 lg:pr-0 md:pb-0"
           >
             <h1
-              class="text-4xl font-extrabold tracking-tight text-slate-50 sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl"
+              class="tracking-tight leading-6 text-4xl font-extrabold  text-slate-200 sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl"
             >
               <span class="block xl:inline">Somos el puente entre la </span>
               <span class="block text-rose-700 xl:inline"
@@ -21,7 +23,7 @@
               >
             </h1>
             <p
-              class="mx-auto text-base text-slate-200 sm:max-w-md lg:text-xl md:max-w-3xl"
+              class="leading-6 mx-auto text-base text-slate-200 sm:max-w-md lg:text-xl md:max-w-3xl tracking-tight"
             >
               Nuestros sistemas cuentan con tecnología avanzada que le permite
               tener mayor control sobre su negocio, maximizando el crecimiento y
@@ -48,15 +50,15 @@
     </div>
   </section>
 
-  <section class="mx-auto px-6 md:max-w-screen-xl" id="about">
-    <div class="mx-auto mt-20 mb-16 block px-6 text-center">
-      <h2 class="mx-auto text-4xl font-bold md:text-5xl text-slate-900">
+  <section class="mx-auto px-6 md:max-w-screen-xl" id="services">
+    <div class="mx-auto mt-20 mb-16 block px-6 text-center text-slate-700 tracking-tight leading-6">
+      <h2 class="mx-auto font-extrabold tracking-tight leading-6 text-4xl sm:text-5xl sm:leading-none md:text-center normal-case ">
         <span class="text-rose-700 font-extrabold"> JBS Go</span> es creada ...
       </h2>
       <div
-        class="mx-auto mt-6 mb-auto block w-full text-xl font-normal leading-9 text-slate-700 md:w-3/4 xl:w-3/4"
+        class="mx-auto mt-6 mb-auto block w-full text-xl font-medium lg:text-xl tracking-tight leading-6  md:w-3/4 xl:w-3/4"
       >
-        <p class="text-lg text-slate-900 font-medium">
+        <p>
           Gracias a la iniciativa, confianza y profesionalismo de cada uno de
           los miembros, es que
           <span class="text-rose-700 font-extrabold"> JBS Go</span> puede
@@ -66,15 +68,12 @@
     </div>
     <div class="grid gap-5 pb-20 sm:grid-cols-2 lg:grid-cols-2">
       <RouterLink
-        data-aos="fade-up-right"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine"
         to="/licenciamiento"
-        class="bg-slate-900 p-10 transition duration-700 ease-in-out rounded-lg border-l-8 border-slate-200 hover:border-rose-700"
+        class="transform bg-slate-900 p-10 transition duration-700 ease-in-out rounded-lg border-l-8 border-rose-200 hover:border-rose-700 cursor-pointer hover:shadow-2xl hover:scale-90"
       >
         <div class="my-4 flex items-center">
           <div
-            class="mr-4 flex h-20 w-20 items-center justify-center rounded-lg border bg-slate-50 text-2xl"
+            class="mr-4 flex h-20 w-20 items-center justify-center rounded-lg border border-spacing-10 border-rose-500 bg-slate-50 text-2xl"
           >
             <img
               class="w-12 h-12 lg:w-16 lg:h-16"
@@ -82,25 +81,24 @@
               alt="wallmount-camera"
             />
           </div>
-          <h3 class="text-2xl font-extrabold text-slate-200">
+          <h3
+            class="tracking-tight leading-6 text-2xl font-extrabold text-slate-200"
+          >
             Licenciamiento & Mayorista de tecnología
           </h3>
         </div>
-        <p class="text-lg font-medium text-slate-200">
+        <p class="lg:text-xl tracking-tight leading-6 text-lg font-medium text-slate-200">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
           repellendus.
         </p>
       </RouterLink>
       <RouterLink
-      data-aos="fade-up-left"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine"
         to="/ciberseguridad"
-        class="bg-slate-900 p-10 transition duration-700 ease-in-out rounded-lg border-l-8 border-slate-200 hover:border-rose-700"
+        class="transform bg-slate-900 p-10 transition duration-700 ease-in-out rounded-lg border-l-8 border-rose-200 hover:border-rose-700 cursor-pointer hover:shadow-2xl hover:scale-90"
       >
         <div class="my-4 flex items-center">
           <div
-            class="mr-4 flex h-20 w-20 items-center justify-center rounded-lg border bg-slate-50 text-2xl"
+            class="mr-4 flex h-20 w-20 items-center justify-center rounded-lg border border-spacing-10 border-rose-500 bg-slate-50 text-2xl"
           >
             <img
               class="w-12 h-12 lg:w-16 lg:h-16"
@@ -108,25 +106,22 @@
               alt="wallmount-camera"
             />
           </div>
-          <h3 class="text-2xl font-extrabold text-slate-200">
+          <h3 class="tracking-tight leading-6 text-2xl font-extrabold text-slate-200">
             Ciberseguridad & Videovigilancia
           </h3>
-        </div>
-        <p class="text-lg font-medium text-slate-200">
+        </div> 
+        <p class="tracking-tight leading-6 text-lg font-medium text-slate-200">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
           repellendus.
         </p>
       </RouterLink>
       <RouterLink
-      data-aos="fade-up-right"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine"
         to="/mantenimiento"
-        class="bg-slate-900 p-10 transition duration-700 ease-in-out rounded-lg border-l-8 border-slate-200 hover:border-rose-700"
+        class="transform bg-slate-900 p-10 transition duration-700 ease-in-out rounded-lg border-l-8 border-rose-200 hover:border-rose-700 cursor-pointer hover:shadow-2xl hover:scale-90"
       >
         <div class="my-4 flex items-center">
           <div
-            class="mr-4 flex h-20 w-20 items-center justify-center rounded-lg border bg-slate-50 text-2xl"
+            class="mr-4 flex h-20 w-20 items-center justify-center rounded-lg border border-spacing-10 border-rose-500 bg-slate-50 text-2xl"
           >
             <img
               class="w-12 h-12 lg:w-16 lg:h-16"
@@ -134,25 +129,22 @@
               alt="wallmount-camera"
             />
           </div>
-          <h3 class="text-2xl font-extrabold text-slate-200">
+          <h3 class="tracking-tight leading-6 text-2xl font-extrabold text-slate-200">
             Mantenimiento & Servicio
           </h3>
         </div>
-        <p class="text-lg font-medium text-slate-200">
+        <p class="tracking-tight leading-6 text-lg font-medium text-slate-200">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
           repellendus.
         </p>
       </RouterLink>
       <RouterLink
-      data-aos="fade-up-left"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine"
         to="/energia"
-        class="bg-slate-900 p-10 transition duration-700 ease-in-out rounded-lg border-l-8 border-slate-200 hover:border-rose-700"
+        class="transform bg-slate-900 p-10 transition duration-700 ease-in-out rounded-lg border-l-8 border-rose-200 hover:border-rose-700 cursor-pointer hover:shadow-2xl hover:scale-90"
       >
         <div class="my-4 flex items-center">
           <div
-            class="mr-4 flex h-20 w-20 items-center justify-center rounded-lg border bg-slate-50 text-2xl"
+            class="mr-4 flex h-20 w-20 items-center justify-center rounded-lg border border-spacing-10 border-rose-500 bg-slate-50 text-2xl"
           >
             <img
               class="w-12 h-12 lg:w-16 lg:h-16"
@@ -160,25 +152,22 @@
               alt="wallmount-camera"
             />
           </div>
-          <h3 class="text-2xl font-extrabold text-slate-200">
+          <h3 class="tracking-tight leading-6 text-2xl font-extrabold text-slate-200">
             Energía & Sistemas de detección de incendios
           </h3>
         </div>
-        <p class="text-lg font-medium text-slate-200">
+        <p class="tracking-tight leading-6 text-lg font-medium text-slate-200">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
           repellendus.
         </p>
       </RouterLink>
       <RouterLink
-      data-aos="fade-up-right"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine"
         to="/logistica"
-        class="bg-slate-900 p-10 transition duration-700 ease-in-out rounded-lg border-l-8 border-slate-200 hover:border-rose-700"
+        class="transform bg-slate-900 p-10 transition duration-700 ease-in-out rounded-lg border-l-8 border-rose-200 hover:border-rose-700 cursor-pointer hover:shadow-2xl hover:scale-90"
       >
         <div class="my-4 flex items-center">
           <div
-            class="mr-4 flex h-20 w-20 items-center justify-center rounded-lg border bg-slate-50 text-2xl"
+            class="mr-4 flex h-20 w-20 items-center justify-center rounded-lg border border-spacing-10 border-rose-500 bg-slate-50 text-2xl"
           >
             <img
               class="w-12 h-12 lg:w-16 lg:h-16"
@@ -186,11 +175,11 @@
               alt="wallmount-camera"
             />
           </div>
-          <h3 class="text-2xl font-extrabold text-slate-200">
+          <h3 class="tracking-tight leading-6 text-2xl font-extrabold text-slate-200">
             Logística & transportación empresarial
           </h3>
         </div>
-        <p class="text-lg font-medium text-slate-200">
+        <p class=" tracking-tight leading-6 text-lg font-medium text-slate-200">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
           repellendus.
         </p>
@@ -198,28 +187,28 @@
     </div>
   </section>
 
-  <section class="bg-slate-900">
+  <section class="bg-slate-900" id="about">
     <div class="px-8 py-24 mx-auto md:px-12 lg:px-32 max-w-7xl">
       <div class="grid items-center grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-24">
         <div class="md:order-first">
-          <div class="flex flex-col gap-12 mt-5">
+          <div class="flex flex-col gap-12 mt-5 font-medium tracking-tight leading-6  text-slate-700">
             <div
-            data-aos="fade-up-right"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine"
-              class="bg-slate-50 mx-auto rounded-sm p-10 text-slate-900 w-full"
+              data-aos="fade-up-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+              class="bg-slate-50 mx-auto rounded-sm p-10 w-full"
             >
               <p
-                class="mb-4 w-32 rounded-md bg-rose-100 px-2 py-1 text-sm font-medium text-rose-700"
+                class="mb-4 w-32 rounded-md bg-rose-100 px-2 py-1"
               ></p>
-              <p class="mb-2 text-2xl">
+              <p class="font-medium tracking-tight leading-6 mb-2 text-2xl">
                 Centro Universitario Cuautitlán Izcalli
               </p>
-              <p class="mb-6 text-slate-900">
+              <p class="mb-6 ">
                 Instalación de cableado estructurado en salones para clases
                 híbridas, preparación de gabinete para centro de datos
               </p>
-              <div class="flex space-x-2 font-medium">
+              <div class="flex space-x-2 items-center">
                 <span class="text-rose-700">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -239,22 +228,22 @@
             </div>
 
             <div
-            data-aos="fade-up-right"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine"
-              class="bg-slate-50 mx-auto rounded-sm p-10 text-slate-900 w-full"
+              data-aos="fade-up-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+              class="bg-slate-50 mx-auto rounded-sm p-10  w-full"
             >
               <p
-                class="mb-4 w-32 rounded-md bg-rose-100 px-2 py-1 text-sm font-medium text-rose-700"
+                class="mb-4 w-32 rounded-md bg-rose-100 px-2 py-1"
               ></p>
               <p class="mb-2 text-2xl">
                 Universidad de Cuautitlán Izcalli Plantel Balcones del Valle
               </p>
-              <p class="mb-6 text-slate-900">
+              <p class="mb-6">
                 Instalación de cableado estructurado en salones para clases
                 híbridas.
               </p>
-              <div class="flex space-x-2 font-medium">
+              <div class="flex space-x-2 items-center">
                 <span class="text-rose-700">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -274,20 +263,20 @@
             </div>
 
             <div
-            data-aos="fade-up-right"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine"
-              class="bg-slate-50 mx-auto rounded-sm p-10 text-slate-900 w-full"
+              data-aos="fade-up-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+              class="bg-slate-50 mx-auto rounded-sm p-10 w-full"
             >
               <p
-                class="mb-4 w-32 rounded-md bg-purple-100 px-2 py-1 text-sm font-medium text-purple-700"
+                class="mb-4 w-32 rounded-md bg-purple-100 px-2 py-1"
               ></p>
               <p class="mb-2 text-2xl">Centro Deportivo Coyoacan A.C.</p>
-              <p class="mb-6 text-slate-900">
+              <p class="mb-6 ">
                 Inspección tierras fisicas de instalaciones.
               </p>
-              <div class="flex space-x-2 font-medium">
-                <span class="text-purple-700">
+              <div class="flex space-x-2 items-center">
+                <span class="text-rose-700">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -306,22 +295,22 @@
             </div>
 
             <div
-            data-aos="fade-up-right"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine"
-              class="bg-slate-50 mx-auto rounded-sm p-10 text-slate-900 w-full"
+              data-aos="fade-up-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+              class="bg-slate-50 mx-auto rounded-sm p-10 w-full"
             >
               <p
-                class="mb-4 w-32 rounded-md bg-purple-100 px-2 py-1 text-sm font-medium text-purple-700"
+                class="mb-4 w-32 rounded-md bg-purple-100 px-2 py-1"
               ></p>
               <p class="mb-2 text-2xl">Centro de monitoreo C5 Pachuca</p>
-              <p class="mb-6 text-slate-900">
+              <p class="mb-6 ">
                 Inspeccion plantas de suministro de energía de respaldo y aparta
                 rayos.
               </p>
 
-              <div class="flex space-x-2 font-medium">
-                <span class="text-purple-700">
+              <div class="flex space-x-2 items-center">
+                <span class="text-rose-700">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -341,15 +330,15 @@
           </div>
         </div>
         <div class="order-first block w-full h-full">
-          <div class="sticky md:top-36" >
+          <div class="sticky md:top-36">
             <h1
-              class="text-4xl font-semibold tracking-tighter text-slate-200 lg:text-5xl text-balance"
+              class=" font-extrabold tracking-tight leading-6 text-4xl text-slate-200 lg:text-5xl"
             >
               Nuestra máxima <br />
               <span class="text-rose-700">empresarial </span> es ...
             </h1>
             <p
-              class="mt-4 text-base font-medium text-slate-200 text-balance text-justify"
+              class="mt-4 tracking-tight text-base font-medium text-slate-200 text-balance text-justify"
             >
               El compromiso con México y toda aquella empresa o persona que
               requiera del uso de recursos y soluciones tecnológicas para

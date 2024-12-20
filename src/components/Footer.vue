@@ -1,48 +1,65 @@
 <template>
-  <section class="relative bg-slate-900 py-10 text-slate-200 sm:py-16 lg:py-24">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-30">
-      <div class="text-center">
-        <div class="mb-4 inline-flex h-36 w-36">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
-            <defs>
-              <clipPath id="clippath">
+  <div class="relative">
+    <div
+      aria-hidden="true"
+      class="absolute inset-0 h-max w-full m-auto grid grid-cols-2 -space-x-52 opacity-40"
+    >
+      <div
+        class="blur-[106px] h-56 bg-gradient-to-br from-purple-400 to-rose-500"
+      ></div>
+      <div
+        class="blur-[106px] h-32 bg-gradient-to-r from-purple-400 to-rose-500"
+      ></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+      <div class="relative">
+        <div class="flex items-center justify-center -space-x-2">
+          <div class="mb-4 inline-flex h-36 w-36">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+              <defs>
+                <clipPath id="clippath">
+                  <path
+                    fill="#be123c"
+                    d="M270.96 98.42v103.17c0 11.3-6.03 21.74-15.81 27.38l-89.34 51.58a31.612 31.612 0 01-31.62 0l-89.35-51.58a31.631 31.631 0 01-15.81-27.38V98.42c0-11.3 6.03-21.74 15.81-27.38l89.35-51.58a31.612 31.612 0 0131.62 0l89.34 51.58a31.631 31.631 0 0115.81 27.38z"
+                  ></path>
+                </clipPath>
+              </defs>
+              <path
+                fill="#be123c"
+                d="M270.96 98.42v103.17c0 11.3-6.03 21.74-15.81 27.38l-89.34 51.58a31.612 31.612 0 01-31.62 0l-89.35-51.58a31.631 31.631 0 01-15.81-27.38V98.42c0-11.3 6.03-21.74 15.81-27.38l89.35-51.58a31.612 31.612 0 0131.62 0l89.34 51.58a31.631 31.631 0 0115.81 27.38z"
+              ></path>
+              <g clip-path="url(#clippath)">
                 <path
-                  fill="#be123c"
-                  d="M270.96 98.42v103.17c0 11.3-6.03 21.74-15.81 27.38l-89.34 51.58a31.612 31.612 0 01-31.62 0l-89.35-51.58a31.631 31.631 0 01-15.81-27.38V98.42c0-11.3 6.03-21.74 15.81-27.38l89.35-51.58a31.612 31.612 0 0131.62 0l89.34 51.58a31.631 31.631 0 0115.81 27.38z"
+                  fill="#FFFFFF"
+                  d="M270.96 93.67v121.78c0 2.77-1.48 5.33-3.87 6.71l-105.47 60.89c-5.16 2.98-11.62-.75-11.62-6.71V154.62c0-2.77 1.48-5.32 3.87-6.71l105.47-60.96c5.16-2.98 11.62.74 11.62 6.71z"
+                  opacity="0.08"
                 ></path>
-              </clipPath>
-            </defs>
-            <path
-              fill="#be123c"
-              d="M270.96 98.42v103.17c0 11.3-6.03 21.74-15.81 27.38l-89.34 51.58a31.612 31.612 0 01-31.62 0l-89.35-51.58a31.631 31.631 0 01-15.81-27.38V98.42c0-11.3 6.03-21.74 15.81-27.38l89.35-51.58a31.612 31.612 0 0131.62 0l89.34 51.58a31.631 31.631 0 0115.81 27.38z"
-            ></path>
-            <g clip-path="url(#clippath)">
-              <path
-                fill="#FFFFFF"
-                d="M270.96 93.67v121.78c0 2.77-1.48 5.33-3.87 6.71l-105.47 60.89c-5.16 2.98-11.62-.75-11.62-6.71V154.62c0-2.77 1.48-5.32 3.87-6.71l105.47-60.96c5.16-2.98 11.62.74 11.62 6.71z"
-                opacity="0.08"
-              ></path>
-              <path
-                fill="#252634"
-                d="M150 154.61v121.76c0 5.95-6.44 9.67-11.59 6.69L32.9 222.14a7.723 7.723 0 01-3.86-6.69V93.63c0-5.95 6.44-9.67 11.6-6.69l105.51 60.98a7.723 7.723 0 013.86 6.69z"
-                opacity="0.15"
-              ></path>
-            </g>
-          </svg>
+                <path
+                  fill="#252634"
+                  d="M150 154.61v121.76c0 5.95-6.44 9.67-11.59 6.69L32.9 222.14a7.723 7.723 0 01-3.86-6.69V93.63c0-5.95 6.44-9.67 11.6-6.69l105.51 60.98a7.723 7.723 0 013.86 6.69z"
+                  opacity="0.15"
+                ></path>
+              </g>
+            </svg>
+          </div>
         </div>
-        <h2 class="text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl">
-          Usamos la tecnología a su favor
-        </h2>
-        <p class="mt-4 text-xl font-medium">
-          Seleccionar el sistema adecuado para su negocio implica comprender sus
-          necesidades ahora y en el futuro
-        </p>
+
+        <div class="mt-6 m-auto space-y-6 md:w-8/12 lg:w-7/12">
+          <h1
+            class="text-center text-4xl font-bold text-gray-800 dark:text-white md:text-5xl"
+          >
+            Usamos la tecnología a su favor
+          </h1>
+          <p class="text-center text-xl text-gray-600 dark:text-gray-300">
+            Seleccionar el sistema adecuado para su negocio implica comprender
+            sus necesidades ahora y en el futuro
+          </p>
+          <div class="flex flex-wrap justify-center gap-6"></div>
+        </div>
       </div>
     </div>
-    <div class="absolute bottom-0 left-0 right-0 top-0 z-10">
-      <img src="/blob-scene-haikei.svg" class="h-full w-full object-cover" />
-    </div>
-  </section>
+  </div>
 
   <footer class="w-full">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
