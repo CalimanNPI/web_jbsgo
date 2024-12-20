@@ -1,6 +1,8 @@
 <template>
   <!-- Section 2 -->
-  <section class="px-2 py-32 md:px-0 bg-slate-900 bg-gradient-to-r from-slate-900 to-rose-900">
+  <section
+    class="px-2 py-32 md:px-0 bg-slate-900 bg-gradient-to-r from-slate-900 to-rose-900"
+  >
     <div class="container items-center max-w-6xl px-8 mx-auto xl:px-5">
       <div class="flex flex-wrap items-center sm:-mx-3">
         <div
@@ -160,16 +162,23 @@
     </div>
   </section>
 
-  <div class="relative w-full h-full bg-cover bg-center flex items-center justify-center p-8 dui-bg-fixed"
-        style="background-image: url('/img/cyber-2.jpg');">
-        <div
-            class="p-8 bg-slate-900 bg-opacity-50 text-white/75 rounded-xl shadow-lg text-center w-full max-w-full mx-2">
-            <h1 class="text-4xl font-bold mb-4">    En esta área ha desarrollado alianzas estratégicas con
-              proveedores de nivel internacional</h1>
-            <p class="text-lg mb-8"> Lo que nos permite tener a nuestro equipo de expertos siempre
-                capacitados para la instalación, mantenimiento y mejoramiento de
-                los sistemas de seguridad, desde la concepción del proyecto
-                hasta la materialización del mismo.</p>
-        </div>
+  <div
+    class="relative w-full h-full bg-cover bg-center flex items-center justify-center p-8 dui-bg-fixed"
+    style="background-image: url('/img/cyber-2.jpg')"
+  >
+    <div
+      class="p-8 bg-slate-900 bg-opacity-50 text-white/75 rounded-xl shadow-lg text-center w-full max-w-full mx-2"
+    >
+      <h1 class="text-4xl font-bold mb-4">
+        En esta área ha desarrollado alianzas estratégicas con proveedores de
+        nivel internacional
+      </h1>
+      <p class="text-lg mb-8">
+        Lo que nos permite tener a nuestro equipo de expertos siempre
+        capacitados para la instalación, mantenimiento y mejoramiento de los
+        sistemas de seguridad, desde la concepción del proyecto hasta la
+        materialización del mismo.
+      </p>
     </div>
+  </div>
 </template>

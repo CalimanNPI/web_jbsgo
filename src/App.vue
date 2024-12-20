@@ -9,7 +9,7 @@ import Icons from "./components/Icons.vue";
 <template>
   <Navbar />
   <main class="bg-white z-0">
-    <Transition name="fade" mode="out-in">
+    <Transition>
       <RouterView />
     </Transition>
   </main>

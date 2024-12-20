@@ -1,6 +1,8 @@
 <template>
   <!-- Section 2 -->
-  <section class="px-2 py-32 md:px-0 bg-slate-900 bg-gradient-to-r from-slate-900 to-rose-900">
+  <section
+    class="px-2 py-32 md:px-0 bg-slate-900 bg-gradient-to-r from-slate-900 to-rose-900"
+  >
     <div class="container items-center max-w-6xl px-8 mx-auto xl:px-5">
       <div class="flex flex-wrap items-center sm:-mx-3">
         <div
@@ -16,13 +18,13 @@
               class="text-4xl font-extrabold tracking-tight text-slate-50 sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl"
             >
               <span class="block xl:inline">Mantenimiento y </span>
-               <span class="block text-rose-700 xl:inline">Servicio.</span>
+              <span class="block text-rose-700 xl:inline">Servicio.</span>
             </h1>
             <p
               class="mx-auto text-base text-slate-200 sm:max-w-md lg:text-xl md:max-w-3xl"
             >
-            Nuestro compromiso es servir y ofrecer soluciones en conjunto con
-            nuestros clientes. <br />
+              Nuestro compromiso es servir y ofrecer soluciones en conjunto con
+              nuestros clientes. <br />
             </p>
             <div class="relative flex flex-col sm:flex-row sm:space-x-4">
               <!--<a href="#_" class="flex items-center w-full px-6 py-3 mb-3 text-lg text-white bg-indigo-600 rounded-md sm:mb-0 hover:bg-indigo-700 sm:w-auto">
@@ -43,101 +45,139 @@
       </div>
     </div>
   </section>
-  
-
 
   <div class="bg-slate-900">
-
-<section id="features"
-    class="relative block px-6 py-10 md:py-20 md:px-10  border-t border-b border-slate-900 bg-slate-900/30">
-
-
-    <div class="relative mx-auto max-w-5xl text-center">
-        <span class="text-gray-400 my-3 flex items-center justify-center font-medium uppercase tracking-wider">
+    <section
+      id="features"
+      class="relative block px-6 py-10 md:py-20 md:px-10 border-t border-b border-slate-900 bg-slate-900/30"
+    >
+      <div class="relative mx-auto max-w-5xl text-center">
+        <span
+          class="text-gray-400 my-3 flex items-center justify-center font-medium uppercase tracking-wider"
+        >
           No solamente comerciamos con tecnología.
         </span>
         <h2
-            class="block w-full bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent text-3xl sm:text-4xl">
-            Como integrador de servicios ofrecemos
-      <span class="text-rose-700"> ...</span>
+          class="block w-full bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent text-3xl sm:text-4xl"
+        >
+          Como integrador de servicios ofrecemos
+          <span class="text-rose-700"> ...</span>
         </h2>
         <p
-            class="mx-auto my-4 w-full max-w-xl bg-transparent text-center font-medium leading-relaxed tracking-wide text-gray-400">
-            continuidad para garantizar el buen funcionamiento de los equipos
-      adquiridos y/o ya instalados previamente por nuestros clientes poniendo a
-      disposición personal de ingeniería calificada y certificada.
+          class="mx-auto my-4 w-full max-w-xl bg-transparent text-center font-medium leading-relaxed tracking-wide text-gray-400"
+        >
+          continuidad para garantizar el buen funcionamiento de los equipos
+          adquiridos y/o ya instalados previamente por nuestros clientes
+          poniendo a disposición personal de ingeniería calificada y
+          certificada.
         </p>
         <p
-            class="mx-auto my-4 w-full max-w-xl bg-transparent text-center font-medium leading-relaxed tracking-wide text-gray-400">
-            Gracias a ello se forma un puente de confianza y
-          comunicación que favorece desarrollar proyectos. 
+          class="mx-auto my-4 w-full max-w-xl bg-transparent text-center font-medium leading-relaxed tracking-wide text-gray-400"
+        >
+          Gracias a ello se forma un puente de confianza y comunicación que
+          favorece desarrollar proyectos.
         </p>
-    </div>
+      </div>
 
-
-    <div class="relative mx-auto max-w-7xl z-10 grid grid-cols-1 gap-10 pt-14 sm:grid-cols-2 lg:grid-cols-3">
-        <div class="rounded-md border border-rose-800 bg-slate-900/50 p-8 text-center shadow">
-            <div class="button-text mx-auto flex h-24 w-24 items-center justify-center rounded-md border bg-slate-50">
-                <img
-                class="w-auto h-auto"
-                src="https://img.icons8.com/?size=100&id=h2vavgy2Hqlj&format=png&color=be123c"
-                alt="wallmount-camera"
-              />
-            </div>
-            <h3 class="mt-6 text-gray-400">Recarga y Mantenimineto de extintores</h3>
-            <p class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
-              Nos especializamos en la recarga y mantenimiento de extintores, garantizando su óptimo funcionamiento para la seguridad de su entorno.  
-            </p>
-        </div>
-
-
-        <div class="rounded-md border border-rose-800 bg-slate-900/50 p-8 text-center shadow">
-          <div class="button-text mx-auto flex h-24 w-24 items-center justify-center rounded-md border bg-slate-50">
+      <div
+        class="relative mx-auto max-w-7xl z-10 grid grid-cols-1 gap-10 pt-14 sm:grid-cols-2 lg:grid-cols-3"
+      >
+        <div
+          class="rounded-md border border-rose-800 bg-slate-900/50 p-8 text-center shadow"
+        >
+          <div
+            class="button-text mx-auto flex h-24 w-24 items-center justify-center rounded-md border bg-slate-50"
+          >
             <img
-                class="w-auto h-auto"
-                src="https://img.icons8.com/?size=100&id=68395&format=png&color=be123c"
-                alt="wallmount-camera"
-              />
-            </div>
-            <h3 class="mt-6 text-gray-400">Reparacion y mantenimiento de CCTV y equipo de computo</h3>
-            <p class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
-              Ofrecemos servicios especializados en reparación y mantenimiento de sistemas de CCTV y equipos de cómputo, asegurando su funcionamiento óptimo y confiabilidad.
-            </p>
+              class="w-auto h-auto"
+              src="https://img.icons8.com/?size=100&id=h2vavgy2Hqlj&format=png&color=be123c"
+              alt="wallmount-camera"
+            />
+          </div>
+          <h3 class="mt-6 text-gray-400">
+            Recarga y Mantenimineto de extintores
+          </h3>
+          <p
+            class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400"
+          >
+            Nos especializamos en la recarga y mantenimiento de extintores,
+            garantizando su óptimo funcionamiento para la seguridad de su
+            entorno.
+          </p>
         </div>
 
-
-        <div class="rounded-md border border-rose-800 bg-slate-900/50 p-8 text-center shadow">
-          <div class="button-text mx-auto flex h-24 w-24 items-center justify-center rounded-md border bg-slate-50">
+        <div
+          class="rounded-md border border-rose-800 bg-slate-900/50 p-8 text-center shadow"
+        >
+          <div
+            class="button-text mx-auto flex h-24 w-24 items-center justify-center rounded-md border bg-slate-50"
+          >
             <img
-                class="w-auto h-auto"
-                src="https://img.icons8.com/?size=100&id=tgujUswVMjpv&format=png&color=be123c"
-                alt="wallmount-camera"
-              />
-            </div>
-            <h3 class="mt-6 text-gray-400">Reemplazo de acumuladores y mantenimiento de UPS</h3>
-            <p class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
-              Ofrecemos servicios especializados en el reemplazo de acumuladores y mantenimiento de sistemas UPS, asegurando una alimentación ininterrumpida y protección de sus equipos críticos.
-            </p>
+              class="w-auto h-auto"
+              src="https://img.icons8.com/?size=100&id=68395&format=png&color=be123c"
+              alt="wallmount-camera"
+            />
+          </div>
+          <h3 class="mt-6 text-gray-400">
+            Reparacion y mantenimiento de CCTV y equipo de computo
+          </h3>
+          <p
+            class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400"
+          >
+            Ofrecemos servicios especializados en reparación y mantenimiento de
+            sistemas de CCTV y equipos de cómputo, asegurando su funcionamiento
+            óptimo y confiabilidad.
+          </p>
         </div>
 
-        <div class="rounded-md border border-rose-800 bg-slate-900/50 p-8 text-center shadow">
-          <div class="button-text mx-auto flex h-24 w-24 items-center justify-center rounded-md border bg-slate-50">
+        <div
+          class="rounded-md border border-rose-800 bg-slate-900/50 p-8 text-center shadow"
+        >
+          <div
+            class="button-text mx-auto flex h-24 w-24 items-center justify-center rounded-md border bg-slate-50"
+          >
             <img
-                class="w-auto h-auto"
-                src="https://img.icons8.com/?size=100&id=103122&format=png&color=be123c"
-                alt="wallmount-camera"
-              />
-            </div>
-            <h3 class="mt-6 text-gray-400">Mantenimiento e inspección de AA</h3>
-            <p class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
-              Ofrecemos servicios profesionales de mantenimiento e inspección de sistemas de aire acondicionado, asegurando su rendimiento óptimo y eficiencia energética.
-            </p>
+              class="w-auto h-auto"
+              src="https://img.icons8.com/?size=100&id=tgujUswVMjpv&format=png&color=be123c"
+              alt="wallmount-camera"
+            />
+          </div>
+          <h3 class="mt-6 text-gray-400">
+            Reemplazo de acumuladores y mantenimiento de UPS
+          </h3>
+          <p
+            class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400"
+          >
+            Ofrecemos servicios especializados en el reemplazo de acumuladores y
+            mantenimiento de sistemas UPS, asegurando una alimentación
+            ininterrumpida y protección de sus equipos críticos.
+          </p>
         </div>
 
+        <div
+          class="rounded-md border border-rose-800 bg-slate-900/50 p-8 text-center shadow"
+        >
+          <div
+            class="button-text mx-auto flex h-24 w-24 items-center justify-center rounded-md border bg-slate-50"
+          >
+            <img
+              class="w-auto h-auto"
+              src="https://img.icons8.com/?size=100&id=103122&format=png&color=be123c"
+              alt="wallmount-camera"
+            />
+          </div>
+          <h3 class="mt-6 text-gray-400">Mantenimiento e inspección de AA</h3>
+          <p
+            class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400"
+          >
+            Ofrecemos servicios profesionales de mantenimiento e inspección de
+            sistemas de aire acondicionado, asegurando su rendimiento óptimo y
+            eficiencia energética.
+          </p>
+        </div>
+      </div>
 
-    </div>
-
-    <!--
+      <!--
       <div class="absolute bottom-0 left-0 z-0 h-1/3 w-full border-b"
       style="background-image: linear-gradient(to right top, rgba(79, 70, 229, 0.2) 0%, transparent 50%, transparent 100%); border-color: rgba(92, 79, 240, 0.2);">
     </div>
@@ -145,10 +185,8 @@
     style="background-image: linear-gradient(to left top, rgba(220, 38, 38, 0.2) 0%, transparent 50%, transparent 100%); border-color: rgba(92, 79, 240, 0.2);">
   </div>
   -->
-
-</section>
-</div>
-
+    </section>
+  </div>
 
   <div class="bg-slate-900">
     <div
@@ -274,16 +312,17 @@
     </div>
   </div>
 
-
-
-  <div class="relative w-full h-full bg-cover bg-center flex items-center justify-center p-8 dui-bg-fixed"
-        style="background-image: url('/img/mante-4.jfif');">
-        <div
-            class="p-8 bg-slate-900 bg-opacity-50 text-white/75 rounded-xl shadow-lg text-center w-full max-w-full mx-2">
-            <h1 class="text-4xl font-bold mb-4">    El contar con
-          Ingeniería certificada, personal honesto y experto en el tema,
-          garantiza nuestra labor y la recurrencia de quien nos contrata.</h1>
-        
-        </div>
+  <div
+    class="relative w-full h-full bg-cover bg-center flex items-center justify-center p-8 dui-bg-fixed"
+    style="background-image: url('/img/mante-4.jfif')"
+  >
+    <div
+      class="p-8 bg-slate-900 bg-opacity-50 text-white/75 rounded-xl shadow-lg text-center w-full max-w-full mx-2"
+    >
+      <h1 class="text-4xl font-bold mb-4">
+        El contar con Ingeniería certificada, personal honesto y experto en el
+        tema, garantiza nuestra labor y la recurrencia de quien nos contrata.
+      </h1>
     </div>
+  </div>
 </template>

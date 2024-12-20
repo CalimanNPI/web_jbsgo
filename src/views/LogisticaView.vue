@@ -1,6 +1,8 @@
 <template>
   <!-- Section 2 -->
-  <section class="px-2 py-32 md:px-0 bg-slate-900 bg-gradient-to-r from-slate-900 to-rose-900">
+  <section
+    class="px-2 py-32 md:px-0 bg-slate-900 bg-gradient-to-r from-slate-900 to-rose-900"
+  >
     <div class="container items-center max-w-6xl px-8 mx-auto xl:px-5">
       <div class="flex flex-wrap items-center sm:-mx-3">
         <div
@@ -124,7 +126,8 @@
           <div>
             <h6 class="mb-2 font-semibold leading-5">Logística</h6>
             <p class="text-sm">
-              Ser eficiente garantiza entregas puntuales, satisfacción del cliente y operaciones fluidas.
+              Ser eficiente garantiza entregas puntuales, satisfacción del
+              cliente y operaciones fluidas.
             </p>
             <hr class="w-full my-6 border-slate-300" />
           </div>
@@ -137,7 +140,6 @@
               <img
                 class="w-16 h-16"
                 src="https://img.icons8.com/?size=100&id=ncQusIGBL0-F&format=png&color=be123c"
-
                 alt="wallmount-camera"
               />
             </div>
@@ -403,14 +405,17 @@
     </div>
   </div>
 
-
-  <div class="relative w-full h-full bg-cover bg-center flex items-center justify-center p-8 dui-bg-fixed"
-        style="background-image: url('/img/trans-5.jpg');">
-        <div
-            class="p-8 bg-slate-900 bg-opacity-50 text-white/75 rounded-xl shadow-lg text-center w-full max-w-full mx-2">
-            <h1 class="text-4xl font-bold mb-4">    Comprometidos en ofrecer una
-          gama completa de opciones para resolver los desafíos de seguridad,
-          movilidad y puntualidad de nuestros clientes</h1>
-        </div>
+  <div
+    class="relative w-full h-full bg-cover bg-center flex items-center justify-center p-8 dui-bg-fixed"
+    style="background-image: url('/img/trans-5.jpg')"
+  >
+    <div
+      class="p-8 bg-slate-900 bg-opacity-50 text-white/75 rounded-xl shadow-lg text-center w-full max-w-full mx-2"
+    >
+      <h1 class="text-4xl font-bold mb-4">
+        Comprometidos en ofrecer una gama completa de opciones para resolver los
+        desafíos de seguridad, movilidad y puntualidad de nuestros clientes
+      </h1>
     </div>
+  </div>
 </template>

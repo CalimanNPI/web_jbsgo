@@ -1,6 +1,8 @@
 <template>
   <!-- Section 2 -->
-  <section class="px-2 py-32 md:px-0 bg-slate-900 bg-gradient-to-r from-slate-900 to-rose-900">
+  <section
+    class="px-2 py-32 md:px-0 bg-slate-900 bg-gradient-to-r from-slate-900 to-rose-900"
+  >
     <div class="container items-center max-w-6xl px-8 mx-auto xl:px-5">
       <div class="flex flex-wrap items-center sm:-mx-3">
         <div
@@ -82,5 +84,4 @@
       </div>
     </div>
   </section>
-
 </template>
