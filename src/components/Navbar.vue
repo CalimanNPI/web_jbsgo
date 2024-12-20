@@ -10,7 +10,7 @@
     <div
       class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto"
     >
-      <a href="/home" class="flex items-center">
+      <a href="/" class="flex items-center">
         <!--<img src="https://www.svgrepo.com/show/499962/music.svg" class="h-6 mr-3 sm:h-9" alt="Landwind Logo">-->
         <span class="self-center text-xl font-black whitespace-nowrap"
           >JBS GO.</span
@@ -22,7 +22,7 @@
         </div>
 
         <a
-          href="/home"
+          href="/"
           class="text-white bg-rose-700 hover:bg-rose-800 focus:ring-4 focus:ring-rose-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 focus:outline-none"
           >Servicios</a
         >

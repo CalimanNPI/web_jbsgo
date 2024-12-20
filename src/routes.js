@@ -7,7 +7,7 @@ import LogisticaView from "./views/LogisticaView.vue";
 import MantenimientoView from "./views/MantenimientoView.vue";
 
 const routes = [
-  { path: "/home", component: HomeView },
+  { path: "/", component: HomeView },
   { path: "/ciberseguridad", component: CiberseguridadView },
   { path: "/energia", component: EnergiaView },
   { path: "/licenciamiento", component: LicenciamientoView },
