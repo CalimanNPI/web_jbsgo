@@ -48,6 +48,8 @@
         </div>
       </div>
     </div>
+    <img src="/img/header.webp" width="2880" height="1358" decoding="async" data-nimg="1" class="z-0 w-full h-full object-cover m-auto absolute inset-0 pointer-events-none" loading="lazy" style="color:transparent">
+
   </section>
 
   <div class="bg-slate-900">

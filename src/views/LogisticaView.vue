@@ -25,10 +25,7 @@
             <p
               class="mx-auto text-base text-slate-200 sm:max-w-md lg:text-xl md:max-w-3xl"
             >
-              Su seguridad y la de los que le rodean es prioridad. Pero también
-              las pérdidas materiales afectan a su negocio. Por ello le
-              ofrecemos una gama de soluciones que atenderán este tipo de
-              incidencias
+            Con una flota moderna y tecnología de seguimiento avanzada, garantizamos la entrega puntual y la satisfacción del cliente, permitiéndote concentrarte en lo que mejor haces.
             </p>
             <div class="relative flex flex-col sm:flex-row sm:space-x-4">
               <!--<a href="#_" class="flex items-center w-full px-6 py-3 mb-3 text-lg text-white bg-indigo-600 rounded-md sm:mb-0 hover:bg-indigo-700 sm:w-auto">
@@ -48,6 +45,16 @@
         </div>
       </div>
     </div>
+    <img
+      src="/img/header.webp"
+      width="2880"
+      height="1358"
+      decoding="async"
+      data-nimg="1"
+      class="z-0 w-full h-full object-cover m-auto absolute inset-0 pointer-events-none"
+      loading="lazy"
+      style="color: transparent"
+    />
   </section>
 
   <div class="px-4 py-16 lg:px-8 lg:py-20 text-slate-900">

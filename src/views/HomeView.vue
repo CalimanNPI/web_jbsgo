@@ -3,7 +3,7 @@
   <section
     class="px-2 py-32 md:px-0 bg-slate-900 bg-gradient-to-r from-slate-900 to-rose-900"
   >
-    <div class="container items-center max-w-6xl px-8 mx-auto xl:px-5">
+    <div class="container items-center max-w-6xl px-8 mx-auto xl:px-5 z-40">
       <div class="flex flex-wrap items-center sm:-mx-3">
         <div
           class="w-full md:w-1/2 md:px-3"
@@ -43,11 +43,12 @@
         </div>
         <div class="w-full md:w-1/2">
           <div class="w-full h-auto overflow-hidden">
-            <img src="/img/svg/home5.svg" />
+            <img src="/img/svg/home5.svg" class="z-auto"/>
           </div>
         </div>
       </div>
     </div>
+    <img src="/img/header.webp" class="z-0 w-full h-full object-cover m-auto absolute inset-0 pointer-events-none" loading="lazy" style="color:transparent;">
   </section>
 
   <section class="mx-auto px-6 md:max-w-screen-xl" id="services">
@@ -94,8 +95,7 @@
         <p
           class="lg:text-xl tracking-tight leading-6 text-lg font-medium text-slate-200"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
-          repellendus.
+        JBS Go actualmente es Partner registrado de diversas marcas para ofrecer un amplio abanico de soluciones a nuestros clientes.
         </p>
       </RouterLink>
       <RouterLink
@@ -119,8 +119,7 @@
           </h3>
         </div>
         <p class="tracking-tight leading-6 text-lg font-medium text-slate-200">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
-          repellendus.
+          Su seguridad y la de los que le rodean es prioridad, pero también las pérdidas materiales afectan a su negocio.
         </p>
       </RouterLink>
       <RouterLink
@@ -144,8 +143,7 @@
           </h3>
         </div>
         <p class="tracking-tight leading-6 text-lg font-medium text-slate-200">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
-          repellendus.
+          Nuestro compromiso es servir y ofrecer soluciones en conjunto con nuestros clientes.
         </p>
       </RouterLink>
       <RouterLink
@@ -169,8 +167,7 @@
           </h3>
         </div>
         <p class="tracking-tight leading-6 text-lg font-medium text-slate-200">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
-          repellendus.
+          Brindar los mejores productos y servicios que protejan vidas, bienes inmuebles y medio ambiente.
         </p>
       </RouterLink>
       <RouterLink
@@ -194,8 +191,7 @@
           </h3>
         </div>
         <p class="tracking-tight leading-6 text-lg font-medium text-slate-200">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
-          repellendus.
+          Nos dedicamos a transportar con seguridad y puntualidad, optimizando rutas para maximizar la eficiencia y reducir costos.
         </p>
       </RouterLink>
     </div>
