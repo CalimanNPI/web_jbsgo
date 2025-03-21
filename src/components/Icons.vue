@@ -1,7 +1,7 @@
 <template>
   <div class="w-full px-4 pt-16 pb-5 text-slate-50 bg-slate-900" id="faq">
     <h2 class="text-4xl font-bold text-center">
-      Como integradores de tecnología
+      Como <span class="text-rose-700">integradores</span> de tecnología
     </h2>
     <p class="pt-6 pb-8 text-base max-w-2xl text-center m-auto">
       Contamos con alianzas comerciales solidas dedicadas a la comercialización
