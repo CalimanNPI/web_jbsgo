@@ -1,355 +1,341 @@
 <template>
-  <!-- Section 2 -->
-  <section
-    class="px-2 py-32 md:px-0 bg-slate-900 bg-gradient-to-r from-slate-900 to-rose-900"
-  >
-    <div class="container items-center max-w-6xl px-8 mx-auto xl:px-5 z-40">
-      <div class="flex flex-wrap items-center sm:-mx-3">
+  <!-- Hero Section -->
+  <section class="relative px-4 py-24 overflow-hidden md:px-0 md:py-36" style="background: linear-gradient(135deg, #0f172a 0%, #2d0a18 50%, #4c0519 100%)">
+    <!-- Animated background elements -->
+    <div class="absolute inset-0 opacity-20">
+      <div class="absolute top-20 left-10 w-72 h-72 bg-rose-600 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
+      <div class="absolute top-40 right-10 w-72 h-72 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"></div>
+      <div class="absolute bottom-20 left-20 w-72 h-72 bg-amber-600 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-4000"></div>
+    </div>
+    
+    <div class="container relative z-10 max-w-6xl px-8 mx-auto xl:px-5">
+      <div class="flex flex-wrap items-center lg:flex-row">
         <div
-          class="w-full md:w-1/2 md:px-3"
+          class="w-full lg:w-1/2 lg:pr-12"
           data-aos="fade-right"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
+          data-aos-duration="800"
         >
-          <div
-            class="w-full pb-6 space-y-6 sm:max-w-md lg:max-w-lg md:space-y-4 lg:space-y-8 xl:space-y-9 sm:pr-5 lg:pr-0 md:pb-0"
-          >
-            <h1
-              class="tracking-tight leading-6 text-4xl font-extrabold text-slate-200 sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl"
-            >
-              <span class="block xl:inline">Somos el puente entre la </span>
-              <span class="block text-rose-700 xl:inline"
-                >tecnología y los negocios.</span
-              >
+          <div class="max-w-2xl mx-auto text-center lg:text-left lg:mx-0">
+            <div class="inline-flex items-center gap-2 px-4 py-2 mb-6 border rounded-full bg-rose-950/40 border-rose-800/30 backdrop-blur-sm">
+              <span class="relative flex w-2 h-2">
+                <span class="absolute inline-flex w-full h-full bg-rose-400 rounded-full opacity-75 animate-ping"></span>
+                <span class="relative inline-flex w-2 h-2 bg-rose-500 rounded-full"></span>
+              </span>
+              <span class="text-sm font-medium text-rose-300">Soluciones Tecnológicas Empresariales</span>
+            </div>
+            
+            <h1 class="mb-6 text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
+              <span class="block">Somos el puente entre la</span>
+              <span class="block text-transparent bg-clip-text bg-gradient-to-r from-rose-400 via-rose-500 to-rose-600">
+                tecnología y los negocios
+              </span>
             </h1>
-            <p
-              class="leading-6 mx-auto text-base text-slate-200 sm:max-w-md lg:text-xl md:max-w-3xl tracking-tight"
-            >
+            
+            <p class="mb-8 text-lg leading-relaxed text-slate-300 max-w-lg mx-auto lg:mx-0">
               Nuestros sistemas cuentan con tecnología avanzada que le permite
               tener mayor control sobre su negocio, maximizando el crecimiento y
-              los resultados fijados para acelerar los negocios de sus socios
-              adaptados a sus necesidades.
+              los resultados fijados para acelerar los negocios de sus socios.
             </p>
-            <div class="relative flex flex-col sm:flex-row sm:space-x-4">
-              <!--<a href="#_" class="flex items-center w-full px-6 py-3 mb-3 text-lg text-white bg-indigo-600 rounded-md sm:mb-0 hover:bg-indigo-700 sm:w-auto">
-              Try It Free
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-            </a>
-            <a href="#_" class="flex items-center px-6 py-3 text-slate-500 bg-slate-100 rounded-md hover:bg-slate-200 hover:text-slate-600">
-              Learn More
-            </a>-->
+            
+            <div class="flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start">
+              <a 
+                href="#services" 
+                class="group inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white transition-all duration-300 bg-gradient-to-r from-rose-700 to-rose-600 rounded-xl hover:from-rose-600 hover:to-rose-500 hover:shadow-xl hover:shadow-rose-600/25 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:ring-offset-2 focus:ring-offset-slate-900"
+              >
+                Ver Servicios
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </a>
+              <a 
+                href="#about" 
+                class="inline-flex items-center justify-center px-8 py-4 text-base font-semibold transition-all duration-300 border rounded-xl text-slate-200 border-slate-600 hover:border-rose-500 hover:text-white hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:ring-offset-2 focus:ring-offset-slate-900 backdrop-blur-sm"
+              >
+                Conocer más
+              </a>
             </div>
           </div>
         </div>
-        <div class="w-full md:w-1/2">
-          <div class="w-full h-auto overflow-hidden">
-            <img src="/img/svg/home5.svg" class="z-auto"/>
-          </div>
-        </div>
-      </div>
-    </div>
-    <img src="/img/header.webp" class="z-0 w-full h-full object-cover m-auto absolute inset-0 pointer-events-none" loading="lazy" style="color:transparent;">
-  </section>
-
-  <section class="mx-auto px-6 md:max-w-screen-xl" id="services">
-    <div
-      class="mx-auto mt-20 mb-16 block px-6 text-center text-slate-700 tracking-tight leading-6"
-    >
-      <h2
-        class="mx-auto font-extrabold tracking-tight leading-6 text-4xl sm:text-5xl sm:leading-none md:text-center normal-case"
-      >
-        <span class="text-rose-700 font-extrabold"> JBS Go</span> es creada ...
-      </h2>
-      <div
-        class="mx-auto mt-6 mb-auto block w-full text-xl font-medium lg:text-xl tracking-tight leading-6 md:w-3/4 xl:w-3/4"
-      >
-        <p>
-          Gracias a la iniciativa, confianza y profesionalismo de cada uno de
-          los miembros, es que
-          <span class="text-rose-700 font-extrabold"> JBS Go</span> puede
-          ofrecer múltiples soluciones en diversos sectores del mercado:
-        </p>
-      </div>
-    </div>
-    <div class="grid gap-5 pb-20 sm:grid-cols-2 lg:grid-cols-2">
-      <RouterLink
-        to="/licenciamiento"
-        class="transform bg-slate-900 p-10 transition duration-700 ease-in-out rounded-lg border-l-8 border-rose-200 hover:border-rose-700 cursor-pointer hover:shadow-2xl hover:scale-90"
-      >
-        <div class="my-4 flex items-center">
-          <div
-            class="mr-4 flex h-20 w-20 items-center justify-center rounded-lg border border-spacing-10 border-rose-500 bg-slate-50 text-2xl"
-          >
-            <img
-              class="w-12 h-12 lg:w-16 lg:h-16"
-              src="https://img.icons8.com/?size=100&id=67464&format=png&color=be123c"
-              alt="wallmount-camera"
+        
+        <div class="w-full mt-12 lg:w-1/2 lg:mt-0" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+          <div class="relative">
+            <div class="absolute inset-0 bg-gradient-to-tr from-rose-600/20 to-transparent rounded-3xl blur-3xl"></div>
+            <InlineSvg
+              src="/img/svg/home5.svg"
+              class="relative z-10 w-full h-auto drop-shadow-2xl animate-float text-rose-600"
+              role="img"
+              aria-label="Ilustración de tecnología empresarial"
             />
           </div>
-          <h3
-            class="tracking-tight leading-6 text-2xl font-extrabold text-slate-200"
-          >
-            Licenciamiento & Mayorista de tecnología
-          </h3>
         </div>
-        <p
-          class="lg:text-xl tracking-tight leading-6 text-lg font-medium text-slate-200"
+      </div>
+    </div>
+    
+
+  </section>
+
+  <SectionSeparator variant="gradient" theme="rose" spacing="sm" />
+
+  <!-- Services Section -->
+  <section class="px-6 py-24 bg-white md:px-8 lg:py-32" id="services">
+    <div class="max-w-7xl mx-auto">
+      <!-- Section Header -->
+      <div class="max-w-3xl mx-auto text-center mb-16 lg:mb-20" data-aos="fade-up">
+        <span class="inline-block px-4 py-2 text-sm font-bold tracking-wider text-rose-700 uppercase bg-rose-100 rounded-full">
+          Nuestros Servicios
+        </span>
+        <h2 class="mt-4 text-4xl font-extrabold text-slate-900 sm:text-5xl lg:text-6xl">
+          <span class="text-rose-700">JBS Go</span>, su aliado estratégico
+        </h2>
+        <p class="mt-6 text-lg leading-relaxed text-slate-600 max-w-2xl mx-auto">
+          Gracias a la iniciativa, confianza y profesionalismo de cada uno de los miembros,
+          <span class="font-semibold text-rose-700">JBS Go</span> ofrece múltiples soluciones en diversos sectores del mercado.
+        </p>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <RouterLink
+          v-for="service in services"
+          :key="service.id"
+          :to="service.path"
+          class="group relative p-8 bg-white rounded-2xl border border-slate-200 hover:border-rose-200 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-rose-600/10 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:ring-offset-2"
+          :data-aos="service.aos"
+          data-aos-duration="600"
         >
-        JBS Go actualmente es Partner registrado de diversas marcas para ofrecer un amplio abanico de soluciones a nuestros clientes.
-        </p>
-      </RouterLink>
-      <RouterLink
-        to="/ciberseguridad"
-        class="transform bg-slate-900 p-10 transition duration-700 ease-in-out rounded-lg border-l-8 border-rose-200 hover:border-rose-700 cursor-pointer hover:shadow-2xl hover:scale-90"
-      >
-        <div class="my-4 flex items-center">
-          <div
-            class="mr-4 flex h-20 w-20 items-center justify-center rounded-lg border border-spacing-10 border-rose-500 bg-slate-50 text-2xl"
-          >
-            <img
-              class="w-12 h-12 lg:w-16 lg:h-16"
-              src="https://img.icons8.com/?size=100&id=RV7kciJyN5um&format=png&color=be123c"
-              alt="wallmount-camera"
-            />
+          <!-- Hover gradient effect -->
+          <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-rose-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          
+          <div class="relative z-10">
+            <div class="flex items-center justify-center w-16 h-16 mb-6 transition-all duration-300 bg-gradient-to-br from-rose-100 to-rose-50 rounded-xl group-hover:scale-110 group-hover:from-rose-200 group-hover:to-rose-100">
+              <img 
+                class="w-8 h-8 transition-transform duration-300 group-hover:scale-110" 
+                :src="service.icon" 
+                :alt="service.title"
+                loading="lazy"
+              />
+            </div>
+            
+            <h3 class="mb-3 text-xl font-bold text-slate-900 group-hover:text-rose-700 transition-colors">
+              {{ service.title }}
+            </h3>
+            
+            <p class="mb-4 text-slate-600 leading-relaxed">
+              {{ service.description }}
+            </p>
+            
+            <div class="flex items-center font-semibold text-rose-600">
+              <span>Saber más</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </div>
           </div>
-          <h3
-            class="tracking-tight leading-6 text-2xl font-extrabold text-slate-200"
-          >
-            Ciberseguridad & Videovigilancia
-          </h3>
-        </div>
-        <p class="tracking-tight leading-6 text-lg font-medium text-slate-200">
-          Su seguridad y la de los que le rodean es prioridad, pero también las pérdidas materiales afectan a su negocio.
-        </p>
-      </RouterLink>
-      <RouterLink
-        to="/mantenimiento"
-        class="transform bg-slate-900 p-10 transition duration-700 ease-in-out rounded-lg border-l-8 border-rose-200 hover:border-rose-700 cursor-pointer hover:shadow-2xl hover:scale-90"
-      >
-        <div class="my-4 flex items-center">
-          <div
-            class="mr-4 flex h-20 w-20 items-center justify-center rounded-lg border border-spacing-10 border-rose-500 bg-slate-50 text-2xl"
-          >
-            <img
-              class="w-12 h-12 lg:w-16 lg:h-16"
-              src="https://img.icons8.com/?size=100&id=103122&format=png&color=be123c"
-              alt="wallmount-camera"
-            />
-          </div>
-          <h3
-            class="tracking-tight leading-6 text-2xl font-extrabold text-slate-200"
-          >
-            Mantenimiento & Servicio
-          </h3>
-        </div>
-        <p class="tracking-tight leading-6 text-lg font-medium text-slate-200">
-          Nuestro compromiso es servir y ofrecer soluciones en conjunto con nuestros clientes.
-        </p>
-      </RouterLink>
-      <RouterLink
-        to="/energia"
-        class="transform bg-slate-900 p-10 transition duration-700 ease-in-out rounded-lg border-l-8 border-rose-200 hover:border-rose-700 cursor-pointer hover:shadow-2xl hover:scale-90"
-      >
-        <div class="my-4 flex items-center">
-          <div
-            class="mr-4 flex h-20 w-20 items-center justify-center rounded-lg border border-spacing-10 border-rose-500 bg-slate-50 text-2xl"
-          >
-            <img
-              class="w-12 h-12 lg:w-16 lg:h-16"
-              src="https://img.icons8.com/?size=100&id=h2vavgy2Hqlj&format=png&color=be123c"
-              alt="wallmount-camera"
-            />
-          </div>
-          <h3
-            class="tracking-tight leading-6 text-2xl font-extrabold text-slate-200"
-          >
-            Energía & Sistemas de detección de incendios
-          </h3>
-        </div>
-        <p class="tracking-tight leading-6 text-lg font-medium text-slate-200">
-          Brindar los mejores productos y servicios que protejan vidas, bienes inmuebles y medio ambiente.
-        </p>
-      </RouterLink>
-      <RouterLink
-        to="/logistica"
-        class="transform bg-slate-900 p-10 transition duration-700 ease-in-out rounded-lg border-l-8 border-rose-200 hover:border-rose-700 cursor-pointer hover:shadow-2xl hover:scale-90"
-      >
-        <div class="my-4 flex items-center">
-          <div
-            class="mr-4 flex h-20 w-20 items-center justify-center rounded-lg border border-spacing-10 border-rose-500 bg-slate-50 text-2xl"
-          >
-            <img
-              class="w-12 h-12 lg:w-16 lg:h-16"
-              src="https://img.icons8.com/?size=100&id=ampvNvsTTwqT&format=png&color=be123c"
-              alt="wallmount-camera"
-            />
-          </div>
-          <h3
-            class="tracking-tight leading-6 text-2xl font-extrabold text-slate-200"
-          >
-            Logística & transportación empresarial
-          </h3>
-        </div>
-        <p class="tracking-tight leading-6 text-lg font-medium text-slate-200">
-          Nos dedicamos a transportar con seguridad y puntualidad, optimizando rutas para maximizar la eficiencia y reducir costos.
-        </p>
-      </RouterLink>
+        </RouterLink>
+      </div>
     </div>
   </section>
 
-  <section class="bg-slate-900" id="about">
-    <div class="px-8 py-24 mx-auto md:px-12 lg:px-32 max-w-7xl">
-      <div class="grid items-center grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-24">
-        <div class="md:order-first">
+  <!-- About / Projects Section -->
+  <section class="py-24 bg-slate-900 lg:py-32" id="about">
+    <div class="px-6 mx-auto max-w-7xl lg:px-8">
+      <!-- Section Header -->
+      <div class="max-w-3xl mx-auto text-center mb-16 lg:mb-20" data-aos="fade-up">
+        <span class="inline-block px-4 py-2 text-sm font-bold tracking-wider text-rose-400 uppercase bg-rose-950/50 rounded-full border border-rose-800/30">
+          Trayectoria
+        </span>
+        <h2 class="mt-4 text-4xl font-extrabold text-white sm:text-5xl lg:text-6xl">
+          Proyectos que nos <span class="text-rose-500">respaldan</span>
+        </h2>
+        <p class="mt-6 text-lg leading-relaxed text-slate-400">
+          El compromiso con México y toda aquella empresa o persona que requiera soluciones tecnológicas
+          para esta Revolución Tecnológica que ya no es una opción.
+        </p>
+      </div>
+
+      <div class="grid gap-12 lg:grid-cols-2 lg:gap-16">
+        <!-- Projects Column -->
+        <div class="space-y-6">
           <div
-            class="flex flex-col gap-12 mt-5 font-medium tracking-tight leading-6 text-slate-700"
+            v-for="(project, index) in projects"
+            :key="index"
+            class="group relative p-6 overflow-hidden transition-all duration-300 bg-slate-800/50 rounded-2xl border border-slate-700/50 hover:border-rose-700/30 hover:bg-slate-800 hover:shadow-2xl hover:shadow-rose-900/20"
+            :data-aos="project.aos"
+            data-aos-duration="600"
           >
-            <div
-              data-aos="fade-up-right"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
-              class="bg-slate-50 mx-auto rounded-sm p-10 w-full"
-            >
-              <p class="mb-4 w-32 rounded-md bg-rose-100 px-2 py-1"></p>
-              <p class="font-medium tracking-tight leading-6 mb-2 text-2xl">
-                Centro Universitario Cuautitlán Izcalli
-              </p>
-              <p class="mb-6">
-                Instalación de cableado estructurado en salones para clases
-                híbridas, preparación de gabinete para centro de datos
-              </p>
-              <div class="flex space-x-2 items-center">
-                <span class="text-rose-700">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    class="h-6 w-6"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                </span>
-                <span>Ciberseguridad y Videovigilancia</span>
-              </div>
+            <!-- Category badge -->
+            <div class="inline-flex items-center gap-2 mb-4">
+              <span :class="[
+                'px-3 py-1 text-xs font-bold uppercase rounded-full border',
+                project.categoryClass
+              ]">
+                {{ project.category }}
+              </span>
             </div>
-
-            <div
-              data-aos="fade-up-right"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
-              class="bg-slate-50 mx-auto rounded-sm p-10 w-full"
-            >
-              <p class="mb-4 w-32 rounded-md bg-rose-100 px-2 py-1"></p>
-              <p class="mb-2 text-2xl">
-                Universidad de Cuautitlán Izcalli Plantel Balcones del Valle
-              </p>
-              <p class="mb-6">
-                Instalación de cableado estructurado en salones para clases
-                híbridas.
-              </p>
-              <div class="flex space-x-2 items-center">
-                <span class="text-rose-700">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    class="h-6 w-6"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                </span>
-                <span>Ciberseguridad y Videovigilancia</span>
-              </div>
-            </div>
-
-            <div
-              data-aos="fade-up-right"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
-              class="bg-slate-50 mx-auto rounded-sm p-10 w-full"
-            >
-              <p class="mb-4 w-32 rounded-md bg-purple-100 px-2 py-1"></p>
-              <p class="mb-2 text-2xl">Centro Deportivo Coyoacan A.C.</p>
-              <p class="mb-6">Inspección tierras fisicas de instalaciones.</p>
-              <div class="flex space-x-2 items-center">
-                <span class="text-rose-700">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    class="h-6 w-6"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                </span>
-                <span>Energía y Sistemas de detección de incendios</span>
-              </div>
-            </div>
-
-            <div
-              data-aos="fade-up-right"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
-              class="bg-slate-50 mx-auto rounded-sm p-10 w-full"
-            >
-              <p class="mb-4 w-32 rounded-md bg-purple-100 px-2 py-1"></p>
-              <p class="mb-2 text-2xl">Centro de monitoreo C5 Pachuca</p>
-              <p class="mb-6">
-                Inspeccion plantas de suministro de energía de respaldo y aparta
-                rayos.
-              </p>
-
-              <div class="flex space-x-2 items-center">
-                <span class="text-rose-700">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    class="h-6 w-6"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                </span>
-                <span>Energía y Sistemas de detección de incendios</span>
-              </div>
+            
+            <h4 class="mb-2 text-xl font-bold text-white group-hover:text-rose-400 transition-colors">
+              {{ project.title }}
+            </h4>
+            
+            <p class="mb-4 text-sm text-slate-400 leading-relaxed">
+              {{ project.description }}
+            </p>
+            
+            <div class="flex items-center gap-2 text-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-rose-500 flex-shrink-0">
+                <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+              </svg>
+              <span class="text-slate-300">{{ project.serviceType }}</span>
             </div>
           </div>
         </div>
-        <div class="order-first block w-full h-full">
-          <div class="sticky md:top-36">
-            <h1
-              class="font-extrabold tracking-tight leading-6 text-4xl text-slate-200 lg:text-5xl"
-            >
-              Nuestra máxima <br />
-              <span class="text-rose-700">empresarial </span> es ...
-            </h1>
-            <p
-              class="mt-4 tracking-tight text-base font-medium text-slate-200 text-balance text-justify"
-            >
-              El compromiso con México y toda aquella empresa o persona que
-              requiera del uso de recursos y soluciones tecnológicas para
-              re-incorporarse a la economía en esta nueva normalidad, a esta
-              Revolución Tecnológica que ya no es una opción.
+
+        <!-- Stats Column -->
+        <div class="lg:sticky lg:top-32 h-fit" data-aos="fade-left" data-aos-duration="800">
+          <div class="p-8 bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl border border-slate-700/50 lg:p-10">
+            <h3 class="mb-4 text-4xl font-extrabold text-white lg:text-5xl">
+              Nuestra máxima<br />
+              <span class="text-rose-500">empresarial</span>
+            </h3>
+            
+            <p class="mb-8 text-lg leading-relaxed text-slate-400">
+              El compromiso con México y toda aquella empresa o persona que requiera del uso de
+              recursos y soluciones tecnológicas para re-incorporarse a la economía en esta
+              nueva normalidad.
             </p>
+            
+            <div class="grid grid-cols-2 gap-6 pt-8 border-t border-slate-700/60">
+              <div v-for="stat in stats" :key="stat.label" class="text-center lg:text-left">
+                <p class="text-3xl font-extrabold text-rose-500 lg:text-4xl">{{ stat.value }}</p>
+                <p class="mt-1 text-sm text-slate-400">{{ stat.label }}</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 </template>
+
+<script setup>
+import { RouterLink } from 'vue-router'
+import SectionSeparator from '../components/SectionSeparator.vue'
+import InlineSvg from '../components/InlineSvg.vue'
+
+// Services data
+const services = [
+  {
+    id: 1,
+    path: '/licenciamiento',
+    icon: 'https://img.icons8.com/?size=100&id=67464&format=png&color=be123c',
+    title: 'Licenciamiento & Mayorista de tecnología',
+    description: 'Partner registrado de diversas marcas para ofrecer un amplio abanico de soluciones a nuestros clientes.',
+    aos: 'fade-up'
+  },
+  {
+    id: 2,
+    path: '/ciberseguridad',
+    icon: 'https://img.icons8.com/?size=100&id=RV7kciJyN5um&format=png&color=be123c',
+    title: 'Ciberseguridad & Videovigilancia',
+    description: 'Su seguridad y la de los que le rodean es prioridad, pero también las pérdidas materiales afectan a su negocio.',
+    aos: 'fade-up'
+  },
+  {
+    id: 3,
+    path: '/mantenimiento',
+    icon: 'https://img.icons8.com/?size=100&id=103122&format=png&color=be123c',
+    title: 'Mantenimiento & Servicio',
+    description: 'Nuestro compromiso es servir y ofrecer soluciones en conjunto con nuestros clientes.',
+    aos: 'fade-up'
+  },
+  {
+    id: 4,
+    path: '/energia',
+    icon: 'https://img.icons8.com/?size=100&id=h2vavgy2Hqlj&format=png&color=be123c',
+    title: 'Energía & Detección de Incendios',
+    description: 'Brindar los mejores productos y servicios que protejan vidas, bienes inmuebles y medio ambiente.',
+    aos: 'fade-up'
+  },
+  {
+    id: 5,
+    path: '/logistica',
+    icon: 'https://img.icons8.com/?size=100&id=ampvNvsTTwqT&format=png&color=be123c',
+    title: 'Logística & Transportación Empresarial',
+    description: 'Nos dedicamos a transportar con seguridad y puntualidad, optimizando rutas para maximizar la eficiencia y reducir costos.',
+    aos: 'fade-up'
+  }
+]
+
+// Projects data
+const projects = [
+  {
+    category: 'Ciberseguridad',
+    categoryClass: 'bg-rose-950/30 text-rose-400 border-rose-800/30',
+    title: 'Centro Universitario Cuautitlán Izcalli',
+    description: 'Instalación de cableado estructurado en salones para clases híbridas, preparación de gabinete para centro de datos.',
+    serviceType: 'Ciberseguridad y Videovigilancia',
+    aos: 'fade-up'
+  },
+  {
+    category: 'Ciberseguridad',
+    categoryClass: 'bg-rose-950/30 text-rose-400 border-rose-800/30',
+    title: 'Universidad de Cuautitlán Izcalli — Balcones del Valle',
+    description: 'Instalación de cableado estructurado en salones para clases híbridas.',
+    serviceType: 'Ciberseguridad y Videovigilancia',
+    aos: 'fade-up'
+  },
+  {
+    category: 'Energía',
+    categoryClass: 'bg-amber-950/30 text-amber-400 border-amber-800/30',
+    title: 'Centro Deportivo Coyoacan A.C.',
+    description: 'Inspección de tierras físicas de instalaciones.',
+    serviceType: 'Energía y Sistemas de detección de incendios',
+    aos: 'fade-up'
+  },
+  {
+    category: 'Energía',
+    categoryClass: 'bg-amber-950/30 text-amber-400 border-amber-800/30',
+    title: 'Centro de monitoreo C5 Pachuca',
+    description: 'Inspección de plantas de suministro de energía de respaldo y pararrayos.',
+    serviceType: 'Energía y Sistemas de detección de incendios',
+    aos: 'fade-up'
+  }
+]
+
+// Stats data
+const stats = [
+  { value: '5+', label: 'Años de experiencia' },
+  { value: '50+', label: 'Proyectos completados' },
+  { value: '5', label: 'Áreas de servicio' },
+  { value: '100%', label: 'Compromiso' }
+]
+</script>
+
+<style scoped>
+@keyframes blob {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -50px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.9); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+</style>
