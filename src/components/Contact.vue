@@ -1,6 +1,7 @@
 <script setup>
 import { ref, reactive } from "vue";
 import emailjs from "@emailjs/browser";
+import DOMPurify from "dompurify";
 
 // Form state
 const formData = reactive({
@@ -20,28 +21,49 @@ const errors = ref([]);
 // Success state
 const showSuccess = ref(false);
 
+const sanitizeHtml = (content = "") =>
+  DOMPurify.sanitize(content, {
+    ALLOWED_TAGS: ["br", "span"],
+    ALLOWED_ATTR: ["class"]
+  });
+
+const sanitizePlainText = (value = "") =>
+  DOMPurify.sanitize(String(value), {
+    ALLOWED_TAGS: [],
+    ALLOWED_ATTR: []
+  }).trim();
+
+const getSanitizedFormData = () => ({
+  name: sanitizePlainText(formData.name),
+  email: sanitizePlainText(formData.email),
+  phone: sanitizePlainText(formData.phone),
+  message: sanitizePlainText(formData.message),
+  service: sanitizePlainText(formData.service),
+  newsletter: !!formData.newsletter
+});
+
 // Form validation
-const validateForm = () => {
+const validateForm = (sanitizedData) => {
   errors.value = [];
 
-  if (!formData.name?.trim()) {
+  if (!sanitizedData.name?.trim()) {
     errors.value.push("El nombre es requerido");
   }
 
-  if (!formData.email?.trim()) {
+  if (!sanitizedData.email?.trim()) {
     errors.value.push("El correo electrónico es requerido");
   } else {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(formData.email)) {
+    if (!emailRegex.test(sanitizedData.email)) {
       errors.value.push("Ingrese un correo electrónico válido");
     }
   }
 
-  if (formData.phone && !/^[\d\s\+\-\(\)]{10,}$/.test(formData.phone)) {
+  if (sanitizedData.phone && !/^[\d\s\+\-\(\)]{10,}$/.test(sanitizedData.phone)) {
     errors.value.push("Ingrese un número de teléfono válido");
   }
 
-  if (!formData.message?.trim()) {
+  if (!sanitizedData.message?.trim()) {
     errors.value.push("El mensaje es requerido");
   }
 
@@ -50,7 +72,11 @@ const validateForm = () => {
 
 // Send email
 const sendEmail = async () => {
-  if (!validateForm()) return;
+  const sanitizedData = getSanitizedFormData();
+
+  if (!validateForm(sanitizedData)) return;
+
+  Object.assign(formData, sanitizedData);
 
   isSending.value = true;
   errors.value = [];
@@ -60,9 +86,9 @@ const sendEmail = async () => {
       "service_6orqgzg",
       "template_345ffk6",
       {
-        ...formData,
-        phone: formData.phone || "No especificado",
-        service: formData.service || "No especificado"
+        ...sanitizedData,
+        phone: sanitizedData.phone || "No especificado",
+        service: sanitizedData.service || "No especificado"
       },
       "NS_lrf5OzRwX5v4f-"
     );
@@ -158,7 +184,7 @@ const serviceOptions = [
                   <h4 class="font-bold text-white mb-1 group-hover:text-rose-400 transition-colors">
                     {{ info.title }}
                   </h4>
-                  <div v-html="info.content" class="text-slate-400 text-sm leading-relaxed"></div>
+                  <div v-html="sanitizeHtml(info.content)" class="text-slate-400 text-sm leading-relaxed"></div>
                 </div>
               </div>
             </div>

@@ -4,6 +4,7 @@
 
 <script setup>
 import { ref, watch } from 'vue'
+import DOMPurify from 'dompurify'
 
 const props = defineProps({
   src: {
@@ -14,6 +15,15 @@ const props = defineProps({
 
 const svgMarkup = ref('')
 
+const isSafeSvgSource = (source) => {
+  try {
+    const resolved = new URL(source, window.location.origin)
+    return resolved.origin === window.location.origin && resolved.pathname.toLowerCase().endsWith('.svg')
+  } catch {
+    return false
+  }
+}
+
 watch(
   () => props.src,
   async (newSrc) => {
@@ -22,13 +32,22 @@ watch(
       return
     }
 
+    if (!isSafeSvgSource(newSrc)) {
+      console.warn(`Bloqueado SVG no seguro: ${newSrc}`)
+      svgMarkup.value = ''
+      return
+    }
+
     try {
-      const response = await fetch(newSrc)
+      const response = await fetch(newSrc, { credentials: 'same-origin' })
       if (!response.ok) {
         throw new Error(`No se pudo cargar ${newSrc}`)
       }
 
-      svgMarkup.value = await response.text()
+      const rawSvg = await response.text()
+      svgMarkup.value = DOMPurify.sanitize(rawSvg, {
+        USE_PROFILES: { svg: true, svgFilters: true }
+      })
     } catch (error) {
       console.error(error)
       svgMarkup.value = ''
