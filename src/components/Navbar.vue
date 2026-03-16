@@ -236,7 +236,7 @@ const isMobileMenuOpen = ref(false)
 
 // Navigation items
 const navItems = [
-  { name: 'Inicio', href: '/' },
+  /*{ name: 'Inicio', href: '/' },*/
 ]
 
 // Services data
