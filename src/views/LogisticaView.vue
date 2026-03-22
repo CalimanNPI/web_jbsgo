@@ -186,7 +186,7 @@
           />
           <img
             class="object-cover w-full h-48 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
-            src="/img/trans-2.jfif"
+            src="/img/trans_3.jpg"
             alt="Servicio de transporte"
             loading="lazy"
           />
@@ -276,7 +276,7 @@
           ></div>
           <img
             class="absolute inset-0 object-cover w-full h-full"
-            src="/img/trans-auto-1.jfif"
+            src="/img/autos.jpeg"
             alt="SUV's Ejecutivas"
             loading="lazy"
           />
@@ -408,7 +408,7 @@
           ></div>
           <img
             class="absolute inset-0 object-cover w-full h-full"
-            src="/img/trans-auto-2.jfif"
+            src="/img/autos3.jpeg"
             alt="Transporte Empresarial"
             loading="lazy"
           />
@@ -487,7 +487,7 @@
           ></div>
           <img
             class="absolute inset-0 object-cover w-full h-full"
-            src="/img/trans-auto-3.jfif"
+            src="/img/autos2.jpeg"
             alt="Mercedes-Benz Sprinter"
             loading="lazy"
           />
@@ -565,7 +565,7 @@
   <!-- Testimonial/Trust Section -->
   <div
     class="relative w-full h-full py-24 bg-center bg-cover bg-fixed"
-    style="background-image: url(&quot;/img/trans-5.jpg&quot;)"
+    style="background-image: url(&quot;/img/tras_2.jpg&quot;)"
   >
     <!-- Overlay -->
     <div class="absolute inset-0 bg-slate-900/80 backdrop-blur-sm"></div>

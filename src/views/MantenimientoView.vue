@@ -461,7 +461,7 @@
   <!-- Testimonial/Trust Section -->
   <div
     class="relative w-full h-full py-24 bg-center bg-cover bg-fixed"
-    style="background-image: url(&quot;/img/mante-4.jfif&quot;)"
+    style="background-image: url(&quot;/img/mante_2.jpg&quot;)"
   >
     <!-- Overlay -->
     <div class="absolute inset-0 bg-slate-900/80 backdrop-blur-sm"></div>
